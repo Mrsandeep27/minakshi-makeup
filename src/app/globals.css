@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 /* ============================================
-   Minakshi Makeup & Hair — Design System
+   Minakshi Makeup & Hair — Design System v2.0
+   Premium Luxury Bridal Experience
    ============================================ */
 
 @theme inline {
@@ -136,6 +137,154 @@ body {
   100% { width: 100%; }
 }
 
+/* ============================================
+   NEW: Ken Burns Hero Effect
+   ============================================ */
+.hero-ken-burns {
+  animation: kenBurns 20s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.08) translate(-1%, -1%); }
+  100% { transform: scale(1.12) translate(1%, 0%); }
+}
+
+/* ============================================
+   NEW: Glass Card / Glassmorphism
+   ============================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card-strong {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card-dark {
+  background: rgba(26, 20, 18, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 165, 90, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   NEW: Gold Frame Glow
+   ============================================ */
+.gold-frame-glow {
+  border: 2px solid rgba(200, 165, 90, 0.2);
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 1px rgba(200, 165, 90, 0.1),
+    0 20px 60px rgba(0, 0, 0, 0.1),
+    inset 0 0 30px rgba(200, 165, 90, 0.05);
+  transition: box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.gold-frame-glow:hover {
+  border-color: rgba(200, 165, 90, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(200, 165, 90, 0.2),
+    0 0 40px rgba(200, 165, 90, 0.15),
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    inset 0 0 30px rgba(200, 165, 90, 0.08);
+}
+
+/* ============================================
+   NEW: Floating Animation
+   ============================================ */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ============================================
+   NEW: Dot Grid Pattern
+   ============================================ */
+.dot-grid {
+  background-image: radial-gradient(circle, var(--color-gold) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* ============================================
+   NEW: Typewriter Cursor
+   ============================================ */
+.typewriter-cursor {
+  font-weight: 100;
+  animation: cursorBlink 0.8s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ============================================
+   NEW: Masonry Grid
+   ============================================ */
+.masonry-grid {
+  columns: 1;
+  column-gap: 1.5rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid { columns: 2; }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid { columns: 3; }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  animation: masonry-fade-in 0.5s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes masonry-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   NEW: Parallax Background
+   ============================================ */
+.parallax-bg {
+  transform: translateZ(0);
+}
+
+@media (min-width: 768px) {
+  .parallax-bg {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: -10%;
+  }
+}
+
 /* --- Gold Shimmer Button --- */
 .btn-shimmer {
   position: relative;
@@ -255,7 +404,7 @@ body {
 .mouse {
   width: 24px;
   height: 38px;
-  border: 2px solid rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.4);
   border-radius: 12px;
   position: relative;
 }
@@ -263,7 +412,7 @@ body {
 .mouse-wheel {
   width: 3px;
   height: 8px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.6);
   border-radius: 3px;
   position: absolute;
   left: 50%;
@@ -284,39 +433,6 @@ body {
   cursor: ew-resize;
   user-select: none;
 }
-
-.ba-slider .ba-after {
-  position: absolute;
-  inset: 0;
-  clip-path: inset(0 50% 0 0);
-}
-
-.ba-slider .ba-handle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 4px;
-  background: var(--color-gold);
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.ba-slider .ba-handle::before,
-.ba-slider .ba-handle::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  border: 2px solid var(--color-gold);
-  background: var(--color-dark);
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-
-.ba-slider .ba-handle::before { left: -14px; }
-.ba-slider .ba-handle::after { right: -14px; }
 
 /* --- WhatsApp Pulse --- */
 .whatsapp-pulse {
@@ -407,4 +523,91 @@ body {
 
 @media (max-width: 768px) {
   .mobile-sticky-bar { display: flex; }
+}
+
+/* --- Fade In Up Keyframe --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   NEW: Image Strip Auto-Scroll
+   ============================================ */
+.image-strip-scroll {
+  animation: imageStripScroll 25s linear infinite;
+  will-change: transform;
+}
+
+.image-strip-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes imageStripScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   NEW: Shimmer Gold Background Animation
+   ============================================ */
+@keyframes shimmerGold {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-gold-bg {
+  background: linear-gradient(
+    90deg,
+    var(--color-gold-dark),
+    var(--color-gold),
+    var(--color-gold-light),
+    var(--color-gold),
+    var(--color-gold-dark)
+  );
+  background-size: 200% auto;
+  animation: shimmerGold 4s linear infinite;
+}
+
+/* ============================================
+   NEW: Smooth Image Load
+   ============================================ */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* ============================================
+   NEW: Focus Styles for Accessibility
+   ============================================ */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   NEW: Scrollbar Styling
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
 }

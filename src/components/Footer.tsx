@@ -3,9 +3,9 @@ import { siteConfig } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-dark)] text-white/80 pb-24 md:pb-0">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-[var(--color-dark)] text-white/80 pb-20 md:pb-0">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
@@ -18,9 +18,9 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed mt-4">
-              Professional Bridal Makeup Artist based in Mumbai.
-              Creating stunning bridal looks with 8+ years of artistry.
-              Available globally for destination weddings.
+              Mumbai ki professional Bridal Makeup Artist.
+              8+ saal se stunning bridal looks bana rahi hoon.
+              Destination weddings ke liye globally available.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Minakshi Makeup & Hair. All rights reserved.
           </p>
           <p className="text-xs text-white/40">
-            Crafted with love for beautiful brides
+            Sundar dulhanon ke liye pyaar se banaya gaya
           </p>
         </div>
       </div>
