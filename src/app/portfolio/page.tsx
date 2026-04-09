@@ -9,29 +9,29 @@ export default function PortfolioPage() {
   return (
     <>
       {/* Header */}
-      <section className="pt-24 pb-6 bg-[var(--color-cream)] relative overflow-hidden">
+      <section className="pt-20 pb-2 md:pt-28 md:pb-6 bg-[var(--color-cream)] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-72 h-72 bg-[var(--color-gold)]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-[var(--color-gold)]/5 rounded-full blur-3xl" />
-        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-          <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Mera Kaam</span>
-          <h1 className="font-[var(--font-heading)] text-2xl md:text-5xl font-bold text-[var(--color-text)] mt-3">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center relative z-10">
+          <span className="hidden md:block font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Mera Kaam</span>
+          <h1 className="font-[var(--font-heading)] text-xl md:text-5xl font-bold text-[var(--color-text)] md:mt-3">
             <span className="text-gold-gradient italic">Bridal Beauty</span> Ka Portfolio
           </h1>
-          <p className="text-[var(--color-text-mid)] mt-4 max-w-2xl mx-auto">
+          <p className="hidden md:block text-[var(--color-text-mid)] mt-4 max-w-2xl mx-auto">
             Meri best bridal transformations ka ek curated showcase — har culture, har style.
             Har look mein ek unique kahani hai pyaar aur khoobsurti ki.
           </p>
-          <div className="flex items-center justify-center gap-6 mt-6 text-sm text-[var(--color-text-mid)]">
-            <span className="flex items-center gap-1.5">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg>
+          <div className="flex items-center justify-center gap-4 md:gap-6 mt-2 md:mt-6 text-xs md:text-sm text-[var(--color-text-mid)]">
+            <span className="flex items-center gap-1">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg>
               {portfolio.length} Looks
             </span>
-            <span className="flex items-center gap-1.5">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" /></svg>
+            <span className="flex items-center gap-1">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" /></svg>
               No Filters
             </span>
-            <span className="flex items-center gap-1.5">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+            <span className="flex items-center gap-1">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
               {siteConfig.rating} Rated
             </span>
           </div>
@@ -39,24 +39,24 @@ export default function PortfolioPage() {
       </section>
 
       {/* Gallery */}
-      <section className="py-8 bg-[var(--color-off-white)]">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-3 md:py-8 bg-[var(--color-off-white)]">
+        <div className="max-w-7xl mx-auto px-3 md:px-6">
           <MasonryGallery items={portfolio} categories={portfolioCategories} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-12 bg-[var(--color-dark)] relative overflow-hidden">
+      <section className="py-6 md:py-12 bg-[var(--color-dark)] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[var(--color-gold)]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-        <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-3xl mx-auto px-4 md:px-6 text-center relative z-10">
           <ScrollReveal>
-            <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-white">
+            <h2 className="font-[var(--font-heading)] text-xl md:text-4xl font-bold text-white">
               Pasand Aaya Jo Dikha?
             </h2>
-            <p className="text-white/50 mt-4">
+            <p className="text-white/50 text-sm md:text-base mt-2 md:mt-4">
               Aao milke aapka apna stunning bridal look banate hain. Trial session book karo aur jadoo khud dekho.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <div className="flex flex-row items-center justify-center gap-3 md:gap-4 mt-4 md:mt-8">
               <Link
                 href="/contact"
                 className="btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"

@@ -13,11 +13,11 @@ const icons: Record<string, React.ReactNode> = {
 
 export default function ProcessTimeline() {
   return (
-    <section className="py-12 md:py-16 bg-[var(--color-off-white)]">
-      <div className="max-w-7xl mx-auto px-6">
-        <ScrollReveal className="text-center mb-16">
+    <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
+      <div className="max-w-7xl mx-auto px-5 md:px-6">
+        <ScrollReveal className="hidden md:block text-center mb-16">
           <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Kaise Hota Hai</span>
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[var(--color-text)] mt-3">
+          <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
             Aapka Safar <span className="text-gold-gradient italic">Bridal Beauty</span> Tak
           </h2>
           <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
@@ -25,7 +25,7 @@ export default function ProcessTimeline() {
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 relative">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8 relative">
           {/* Connection line (desktop) */}
           <div className="hidden md:block absolute top-14 left-[12.5%] right-[12.5%] h-[2px] bg-gradient-to-r from-[var(--color-gold-glow)] via-[var(--color-gold)] to-[var(--color-gold-glow)]" />
 
@@ -36,13 +36,13 @@ export default function ProcessTimeline() {
                 {step.step}
               </div>
 
-              <div className="w-16 h-16 md:w-28 md:h-28 rounded-xl md:rounded-2xl bg-white border-2 border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] flex items-center justify-center mx-auto mb-3 md:mb-6 relative z-10 text-[var(--color-gold)] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                <div className="group-hover:scale-110 transition-transform duration-300">
+              <div className="w-14 h-14 md:w-28 md:h-28 rounded-xl md:rounded-2xl bg-white border-2 border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] flex items-center justify-center mx-auto mb-2 md:mb-6 relative z-10 text-[var(--color-gold)] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div className="group-hover:scale-110 transition-transform duration-300 scale-75 md:scale-100">
                   {icons[step.icon]}
                 </div>
               </div>
 
-              <h3 className="font-[var(--font-heading)] text-sm md:text-xl font-semibold text-[var(--color-text)]">
+              <h3 className="font-[var(--font-heading)] text-xs md:text-xl font-semibold text-[var(--color-text)]">
                 {step.title}
               </h3>
               <p className="hidden md:block text-sm text-[var(--color-text-mid)] mt-3 leading-relaxed max-w-[250px] mx-auto">

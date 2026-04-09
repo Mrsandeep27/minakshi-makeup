@@ -51,11 +51,11 @@ export default function TestimonialCarousel({ reviews }: TestimonialCarouselProp
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div ref={trackRef} className="flex gap-6 will-change-transform">
+      <div ref={trackRef} className="flex gap-4 md:gap-6 will-change-transform">
         {doubled.map((review, i) => (
           <div
             key={i}
-            className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[380px] bg-white rounded-2xl p-5 md:p-7 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300 group"
+            className="flex-shrink-0 w-[260px] sm:w-[350px] md:w-[380px] bg-white rounded-2xl p-4 md:p-7 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300 group"
           >
             {/* Quote mark */}
             <div className="text-[var(--color-gold)] opacity-20 font-[var(--font-heading)] text-6xl leading-none -mt-2 -mb-4">&ldquo;</div>
@@ -75,7 +75,7 @@ export default function TestimonialCarousel({ reviews }: TestimonialCarouselProp
             </p>
 
             {/* Author */}
-            <div className="flex items-center gap-3 mt-5 pt-4 border-t border-[var(--color-cream-dark)]">
+            <div className="flex items-center gap-3 mt-3 md:mt-5 pt-3 md:pt-4 border-t border-[var(--color-cream-dark)]">
               <img
                 src={review.image}
                 alt={review.name}

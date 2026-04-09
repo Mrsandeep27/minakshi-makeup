@@ -26,7 +26,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Marquee */}
-      <div className="bg-[var(--color-dark)] py-4 overflow-hidden">
+      <div className="bg-[var(--color-dark)] py-2 md:py-4 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           <div className="flex items-center gap-8 px-4">
             {[...marqueeItems, ...marqueeItems].map((item, i) => (
@@ -40,9 +40,9 @@ export default function HomePage() {
       </div>
 
       {/* Trust Bar */}
-      <section className="bg-white border-b border-[var(--color-cream-dark)] py-6">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+      <section className="bg-white border-b border-[var(--color-cream-dark)] py-2 md:py-6">
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-6">
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -74,13 +74,13 @@ export default function HomePage() {
 
       {/* Stats Bar */}
       <section className="bg-[var(--color-dark)]">
-        <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-6 py-6 md:py-14 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {stats.map((stat, i) => (
             <ScrollReveal key={i} delay={i * 100} className="text-center">
-              <div className="font-[var(--font-heading)] text-4xl md:text-5xl font-bold text-gold-gradient">
+              <div className="font-[var(--font-heading)] text-2xl md:text-5xl font-bold text-gold-gradient">
                 <CountUp target={stat.number} suffix={stat.suffix} decimals={stat.number % 1 !== 0 ? 1 : 0} />
               </div>
-              <div className="font-[var(--font-accent)] text-sm tracking-[0.15em] uppercase text-white/50 mt-2">
+              <div className="font-[var(--font-accent)] text-[10px] md:text-sm tracking-[0.15em] uppercase text-white/50 mt-1 md:mt-2">
                 {stat.label}
               </div>
             </ScrollReveal>
@@ -89,11 +89,11 @@ export default function HomePage() {
       </section>
 
       {/* ===== FEATURED BRIDES GALLERY — full-width visual impact ===== */}
-      <section className="py-12 md:py-16 bg-[var(--color-off-white)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal className="text-center mb-14">
+      <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <ScrollReveal className="hidden md:block text-center mb-14">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Hamari Dulhanein</span>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-4xl font-bold text-[var(--color-text)] mt-3">
+            <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               Real Brides, <span className="text-gold-gradient italic">Real Glow</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
@@ -102,22 +102,22 @@ export default function HomePage() {
           </ScrollReveal>
 
           {/* Bento Grid — visual variety */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
             {/* Tall left */}
             <ScrollReveal delay={0} className="col-span-1 row-span-2">
-              <div className="group relative h-full min-h-[280px] md:min-h-[520px] rounded-2xl overflow-hidden">
+              <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img src="/images/portfolio/glamorous-engagement.jpg" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-[var(--color-gold)]/80 text-white text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
-                  <h3 className="font-[var(--font-heading)] text-white text-lg font-semibold mt-2">Glamorous Engagement Look</h3>
+                <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
+                  <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
+                  <h3 className="font-[var(--font-heading)] text-white text-xs md:text-lg font-semibold mt-1 md:mt-2">Glamorous Engagement Look</h3>
                 </div>
               </div>
             </ScrollReveal>
 
             {/* Top row middle */}
             <ScrollReveal delay={80}>
-              <div className="group relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden">
+              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img src="/images/portfolio/marathi-bride.jpg" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -127,7 +127,7 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal delay={120}>
-              <div className="group relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden">
+              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img src="/images/portfolio/soft-pink-bride.jpg" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -138,19 +138,19 @@ export default function HomePage() {
 
             {/* Tall right */}
             <ScrollReveal delay={160} className="col-span-1 row-span-2">
-              <div className="group relative h-full min-h-[280px] md:min-h-[520px] rounded-2xl overflow-hidden">
+              <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img src="/images/portfolio/glowing-wedding.jpg" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-[var(--color-gold)]/80 text-white text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
-                  <h3 className="font-[var(--font-heading)] text-white text-lg font-semibold mt-2">Pyaar Se Chamakti Dulhan</h3>
+                <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
+                  <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
+                  <h3 className="font-[var(--font-heading)] text-white text-xs md:text-lg font-semibold mt-1 md:mt-2">Pyaar Se Chamakti Dulhan</h3>
                 </div>
               </div>
             </ScrollReveal>
 
             {/* Bottom row middle */}
             <ScrollReveal delay={200}>
-              <div className="group relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden">
+              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img src="/images/portfolio/reception-makeover.jpg" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -160,7 +160,7 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal delay={240}>
-              <div className="group relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden">
+              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img src="/images/portfolio/hd-siders-look.jpg" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -170,7 +170,7 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
 
-          <ScrollReveal className="text-center mt-10">
+          <ScrollReveal className="hidden md:block text-center mt-10">
             <Link
               href="/portfolio"
               className="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)] transition-all duration-300 hover:scale-105"
@@ -199,7 +199,7 @@ export default function HomePage() {
             "/images/portfolio/glamorous-engagement-3.jpg",
             "/images/portfolio/wedding-classic.jpg",
           ].map((src, i) => (
-            <div key={i} className="flex-shrink-0 w-[220px] h-[280px] md:w-[280px] md:h-[350px]">
+            <div key={i} className="flex-shrink-0 w-[150px] h-[190px] md:w-[280px] md:h-[350px]">
               <img src={src} alt="" className="w-full h-full object-cover" />
             </div>
           ))}
@@ -207,74 +207,113 @@ export default function HomePage() {
       </div>
 
       {/* About Preview */}
-      <section className="py-12 md:py-16 bg-[var(--color-off-white)]">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <ScrollReveal variant="left">
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden gold-frame-glow">
+      <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
+        {/* Mobile: compact side-by-side layout */}
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <div className="flex gap-4 md:hidden items-start">
+            <div className="flex-shrink-0 w-[120px]">
+              <div className="relative rounded-xl overflow-hidden gold-frame-glow">
                 <img
                   src="/images/about-main.jpg"
                   alt="Minakshi at work"
-                  className="w-full h-[300px] md:h-[520px] object-cover"
+                  className="w-full h-[160px] object-cover" style={{objectPosition: 'center 30%'}}
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 glass-card-dark px-5 py-4 hidden md:flex items-center gap-4 animate-float">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[var(--color-gold-dark)] to-[var(--color-gold-light)] flex items-center justify-center text-white font-bold text-xl">{siteConfig.experience}+</div>
-                <div>
-                  <div className="font-semibold text-sm text-white">Saal Ka</div>
-                  <div className="text-xs text-white/60">Bridal Artistry</div>
-                </div>
+            </div>
+            <div className="flex-1 min-w-0">
+              <span className="font-[var(--font-accent)] text-[10px] tracking-[0.2em] uppercase text-[var(--color-gold)]">Minakshi Ke Baare Mein</span>
+              <h2 className="font-[var(--font-heading)] text-base font-bold text-[var(--color-text)] mt-1 leading-tight">
+                Har Dulhan Banti Hai Ek <span className="text-gold-gradient italic">Masterpiece</span>
+              </h2>
+              <p className="text-[var(--color-text-mid)] text-xs mt-2 leading-relaxed line-clamp-4">
+                8+ saal ke experience ke saath, 500+ dulhanon ko sajaya hai. Mumbai ke Vasai-Virar se based, globally available — har culture ki bridal artistry mein expert.
+              </p>
+              <div className="flex flex-wrap gap-1.5 mt-3">
+                {["Multi-Cultural", "HD Makeup", "No-Lash Natural"].map((tag) => (
+                  <span key={tag} className="px-2 py-1 bg-[var(--color-gold-soft)] border border-[var(--color-gold-glow)] rounded-full text-[10px] font-medium tracking-wide text-[var(--color-gold-dark)]">
+                    {tag}
+                  </span>
+                ))}
               </div>
-              <img
-                src="/images/about-detail.jpg"
-                alt="Makeup detail"
-                className="absolute -top-6 -left-6 w-36 h-44 object-cover rounded-2xl shadow-xl border-4 border-white hidden md:block hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute -z-10 -bottom-8 -left-8 w-32 h-32 dot-grid opacity-30 hidden md:block" />
+              <Link
+                href="/portfolio"
+                className="btn-shimmer inline-flex items-center gap-1.5 mt-3 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-4 py-2 rounded-full font-semibold text-xs tracking-wide"
+              >
+                Mera Kaam Dekho
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </Link>
             </div>
-          </ScrollReveal>
+          </div>
 
-          <ScrollReveal variant="right">
-            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Minakshi Ke Baare Mein</span>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-4xl font-bold text-[var(--color-text)] mt-3 leading-tight">
-              Har Dulhan Banti Hai Ek <span className="text-gold-gradient italic">Masterpiece</span>
-            </h2>
-            <p className="text-[var(--color-text-mid)] mt-6 leading-relaxed">
-              8+ saal ke experience ke saath, mujhe 500+ dulhanon ko unke sabse sundar
-              roop mein sajane ka maan mila hai. Mumbai ke Vasai-Virar area se based hoon aur globally available —
-              Marathi, South Indian, Bengali aur Buddhist — har culture ki bridal artistry mein expert hoon.
-            </p>
-            <p className="text-[var(--color-text-mid)] mt-4 leading-relaxed">
-              Meri philosophy simple hai: &ldquo;No filter ahead.&rdquo; Main aapki natural beauty ko enhance karti hoon,
-              mask nahi karti. Har brush stroke aapki khoobsurti ka celebration hai, aur aapka special day
-              truly unforgettable bana dena — yahi mera kaam hai.
-            </p>
+          {/* Desktop: original 2-column layout */}
+          <div className="hidden md:grid md:grid-cols-2 gap-16 items-center">
+            <ScrollReveal variant="left">
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden gold-frame-glow">
+                  <img
+                    src="/images/about-main.jpg"
+                    alt="Minakshi at work"
+                    className="w-full h-[520px] object-cover" style={{objectPosition: 'center 30%'}}
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-6 glass-card-dark px-5 py-4 flex items-center gap-4 animate-float">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[var(--color-gold-dark)] to-[var(--color-gold-light)] flex items-center justify-center text-white font-bold text-xl">{siteConfig.experience}+</div>
+                  <div>
+                    <div className="font-semibold text-sm text-white">Saal Ka</div>
+                    <div className="text-xs text-white/60">Bridal Artistry</div>
+                  </div>
+                </div>
+                <img
+                  src="/images/about-detail.jpg"
+                  alt="Makeup detail"
+                  className="absolute -top-6 -left-6 w-36 h-44 object-cover rounded-2xl shadow-xl border-4 border-white hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -z-10 -bottom-8 -left-8 w-32 h-32 dot-grid opacity-30" />
+              </div>
+            </ScrollReveal>
 
-            <div className="flex flex-wrap gap-3 mt-8">
-              {["Multi-Cultural Expert", "HD Makeup", "No-Lash Natural", "Globally Available"].map((tag) => (
-                <span key={tag} className="px-4 py-2 bg-[var(--color-gold-soft)] border border-[var(--color-gold-glow)] rounded-full text-xs font-medium tracking-wide text-[var(--color-gold-dark)]">
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <ScrollReveal variant="right">
+              <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Minakshi Ke Baare Mein</span>
+              <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3 leading-tight">
+                Har Dulhan Banti Hai Ek <span className="text-gold-gradient italic">Masterpiece</span>
+              </h2>
+              <p className="text-[var(--color-text-mid)] mt-6 leading-relaxed">
+                8+ saal ke experience ke saath, mujhe 500+ dulhanon ko unke sabse sundar
+                roop mein sajane ka maan mila hai. Mumbai ke Vasai-Virar area se based hoon aur globally available —
+                Marathi, South Indian, Bengali aur Buddhist — har culture ki bridal artistry mein expert hoon.
+              </p>
+              <p className="text-[var(--color-text-mid)] mt-4 leading-relaxed">
+                Meri philosophy simple hai: &ldquo;No filter ahead.&rdquo; Main aapki natural beauty ko enhance karti hoon,
+                mask nahi karti. Har brush stroke aapki khoobsurti ka celebration hai, aur aapka special day
+                truly unforgettable bana dena — yahi mera kaam hai.
+              </p>
 
-            <Link
-              href="/portfolio"
-              className="btn-shimmer inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)] transition-all duration-300 hover:scale-105"
-            >
-              <span>Mera Kaam Dekho</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            </Link>
-          </ScrollReveal>
+              <div className="flex flex-wrap gap-3 mt-8">
+                {["Multi-Cultural Expert", "HD Makeup", "No-Lash Natural", "Globally Available"].map((tag) => (
+                  <span key={tag} className="px-4 py-2 bg-[var(--color-gold-soft)] border border-[var(--color-gold-glow)] rounded-full text-xs font-medium tracking-wide text-[var(--color-gold-dark)]">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <Link
+                href="/portfolio"
+                className="btn-shimmer inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)] transition-all duration-300 hover:scale-105"
+              >
+                <span>Mera Kaam Dekho</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </Link>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
       {/* Before/After Transformations — TWO sliders side by side */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal className="text-center mb-14">
+      <section className="py-3 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <ScrollReveal className="hidden md:block text-center mb-14">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Transformation</span>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-4xl font-bold text-[var(--color-text)] mt-3">
+            <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               Dekho <span className="text-gold-gradient italic">Jadoo Hote Hue</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
@@ -289,13 +328,13 @@ export default function HomePage() {
                 afterImage="/images/portfolio/engagement-glamour.jpg"
                 beforeLabel="Before"
                 afterLabel="After Makeup"
-                className="h-[280px] md:h-[500px]"
+                className="h-[220px] md:h-[500px]"
               />
-              <p className="text-center text-sm text-[var(--color-text-mid)] mt-3 font-medium">Engagement Makeover — Drag to see the magic</p>
+              <p className="hidden md:block text-center text-sm text-[var(--color-text-mid)] mt-3 font-medium">Engagement Makeover — Drag to see the magic</p>
             </ScrollReveal>
           </div>
 
-          <div className="flex items-center justify-center gap-6 mt-8">
+          <div className="hidden md:flex items-center justify-center gap-6 mt-8">
             <div className="flex items-center gap-2 text-sm text-[var(--color-text-mid)]">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" /></svg>
               No Filter
@@ -313,11 +352,11 @@ export default function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-12 md:py-16 bg-[var(--color-off-white)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal className="text-center mb-16">
+      <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <ScrollReveal className="hidden md:block text-center mb-16">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Humari Services</span>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-4xl font-bold text-[var(--color-text)] mt-3">
+            <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               Aapke Special Day Ke Liye <span className="text-gold-gradient italic">Bani Services</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-2xl mx-auto">
@@ -390,7 +429,7 @@ export default function HomePage() {
       </section>
 
       {/* Parallax Booking Banner */}
-      <section className="relative h-[350px] md:h-[400px] overflow-hidden">
+      <section className="relative h-[240px] md:h-[400px] overflow-hidden">
         <div className="absolute inset-0 parallax-bg">
           <img
             src="/images/portfolio/cinematic-wedding.jpg"
@@ -401,31 +440,31 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-dark)]/90 via-[var(--color-dark)]/70 to-[var(--color-dark)]/90" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
           <ScrollReveal>
-            <div className="inline-flex items-center gap-2 bg-[var(--color-gold)]/20 backdrop-blur-sm border border-[var(--color-gold)]/30 rounded-full px-5 py-2 mb-6">
+            <div className="inline-flex items-center gap-2 bg-[var(--color-gold)]/20 backdrop-blur-sm border border-[var(--color-gold)]/30 rounded-full px-4 py-1.5 md:px-5 md:py-2 mb-3 md:mb-6">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <span className="text-white/90 text-sm font-medium">{siteConfig.bookingStatus}</span>
             </div>
             <h2 className="font-[var(--font-heading)] text-2xl md:text-5xl font-bold text-white mt-2 leading-tight">
               Apne Special Day Ko Banao<br /><span className="text-gold-gradient italic">Unforgettable</span>
             </h2>
-            <p className="text-white/60 mt-4 max-w-xl mx-auto">
-              2025-2026 season ke liye limited dates bachi hain. Aaj hi trial session book karo aur milke jadoo create karte hain.
+            <p className="text-white/60 mt-3 md:mt-4 max-w-xl mx-auto text-sm md:text-base">
+              2025-2026 season ke liye limited dates bachi hain. Aaj hi trial session book karo.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <div className="flex flex-row items-center justify-center gap-3 mt-5 md:mt-8">
               <Link
                 href="/contact"
-                className="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-4 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
+                className="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-5 py-3 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-sm tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
               >
                 Availability Check Karo
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
               <a
                 href={siteConfig.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold text-sm tracking-wide hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-sm tracking-wide hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
                 WhatsApp Karo
               </a>
             </div>
@@ -437,11 +476,11 @@ export default function HomePage() {
       <ProcessTimeline />
 
       {/* Reviews Section */}
-      <section className="py-12 md:py-16 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal className="text-center mb-14">
+      <section className="py-3 md:py-16 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <ScrollReveal className="hidden md:block text-center mb-14">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Reviews</span>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-4xl font-bold text-[var(--color-text)] mt-3">
+            <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               Humari <span className="text-gold-gradient italic">Dulhanein Kya Kehti Hain</span>
             </h2>
             <div className="flex items-center justify-center gap-3 mt-5">
@@ -467,7 +506,7 @@ export default function HomePage() {
         <TestimonialCarousel reviews={reviews} />
 
         <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal className="text-center mt-12">
+          <ScrollReveal className="hidden md:block text-center mt-12">
             <Link
               href="/reviews"
               className="inline-flex items-center gap-2 font-medium text-sm text-[var(--color-gold-dark)] hover:text-[var(--color-gold)] transition-colors tracking-wide border border-[var(--color-gold-glow)] hover:border-[var(--color-gold)] px-6 py-3 rounded-full hover:bg-[var(--color-gold-soft)] transition-all duration-300"
@@ -480,24 +519,24 @@ export default function HomePage() {
       </section>
 
       {/* ===== WEDDING PLATFORMS TRUST BAR ===== */}
-      <section className="py-8 bg-[var(--color-cream)] border-y border-[var(--color-cream-dark)]">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <p className="font-[var(--font-accent)] text-sm tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-8">As Featured On Leading Wedding Platforms</p>
-          <div className="flex items-center justify-center gap-10 md:gap-16 flex-wrap opacity-40">
-            <span className="font-[var(--font-heading)] text-xl md:text-2xl font-bold text-[var(--color-text)]">WedMeGood</span>
-            <span className="font-[var(--font-heading)] text-xl md:text-2xl font-bold text-[var(--color-text)]">ShaadiSaga</span>
-            <span className="font-[var(--font-heading)] text-xl md:text-2xl font-bold text-[var(--color-text)]">WeddingBazaar</span>
-            <span className="font-[var(--font-heading)] text-xl md:text-2xl font-bold text-[var(--color-text)]">Shaadi.com</span>
+      <section className="py-2 md:py-8 bg-[var(--color-cream)] border-y border-[var(--color-cream-dark)]">
+        <div className="max-w-5xl mx-auto px-5 md:px-6 text-center">
+          <p className="hidden md:block font-[var(--font-accent)] text-sm tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-8">As Featured On Leading Wedding Platforms</p>
+          <div className="flex items-center justify-center gap-3 md:gap-16 flex-wrap opacity-40">
+            <span className="font-[var(--font-heading)] text-xs md:text-2xl font-bold text-[var(--color-text)]">WedMeGood</span>
+            <span className="font-[var(--font-heading)] text-xs md:text-2xl font-bold text-[var(--color-text)]">ShaadiSaga</span>
+            <span className="font-[var(--font-heading)] text-xs md:text-2xl font-bold text-[var(--color-text)]">WeddingBazaar</span>
+            <span className="font-[var(--font-heading)] text-xs md:text-2xl font-bold text-[var(--color-text)]">Shaadi.com</span>
           </div>
         </div>
       </section>
 
       {/* Instagram Feed */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal className="text-center mb-12">
+      <section className="py-3 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-5 md:px-6">
+          <ScrollReveal className="hidden md:block text-center mb-12">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Instagram Pe Dekho</span>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-4xl font-bold text-[var(--color-text)] mt-3">
+            <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               @minakshimakeupandhair
             </h2>
             <p className="text-[var(--color-text-mid)] mt-3">Real kaam. Real dulhanein. Real transformations.</p>
@@ -511,7 +550,7 @@ export default function HomePage() {
             />
           </ScrollReveal>
 
-          <ScrollReveal className="text-center mt-10">
+          <ScrollReveal className="hidden md:block text-center mt-10">
             <a
               href={siteConfig.instagram}
               target="_blank"
@@ -526,23 +565,23 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-[var(--color-dark)] relative overflow-hidden">
+      <section className="py-4 md:py-16 bg-[var(--color-dark)] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[var(--color-gold)]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[var(--color-gold)]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
-        <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-3xl mx-auto px-5 md:px-6 text-center relative z-10">
           <ScrollReveal>
-            <h2 className="font-[var(--font-heading)] text-2xl md:text-5xl font-bold text-white leading-tight">
+            <h2 className="font-[var(--font-heading)] text-xl md:text-5xl font-bold text-white leading-tight">
               Apne Sabse <span className="text-gold-gradient italic">Sundar Look</span> Ke Liye Ready?
             </h2>
-            <p className="text-white/50 mt-6 text-lg">
+            <p className="text-white/50 mt-3 md:mt-6 text-sm md:text-lg">
               Aao milke baat karte hain aapke vision ke baare mein aur ek aisa look create karte hain jo sirf aapka ho.
               Limited dates hain — jaldi book karo.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+            <div className="flex flex-row items-center justify-center gap-3 mt-6 md:mt-10">
               <Link
                 href="/contact"
-                className="btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-9 py-4 rounded-full font-semibold tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
+                className="btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-5 py-3 md:px-9 md:py-4 rounded-full font-semibold text-xs md:text-base tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
               >
                 Availability Check Karo
               </Link>
@@ -550,9 +589,9 @@ export default function HomePage() {
                 href={siteConfig.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#25D366] text-white px-9 py-4 rounded-full font-semibold tracking-wide hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 md:px-9 md:py-4 rounded-full font-semibold text-xs md:text-base tracking-wide hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
                 WhatsApp Karo
               </a>
             </div>

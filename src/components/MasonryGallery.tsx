@@ -57,7 +57,7 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
   const renderCard = (item: PortfolioItem, isBig = false) => (
     <div
       key={item.id}
-      className="group cursor-pointer relative rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 h-full"
+      className="group cursor-pointer relative rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 h-full"
       onClick={() => setLightbox(item.id)}
     >
       <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
@@ -90,11 +90,11 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
       if (pattern % 4 === 0 && r >= 3) {
         // Row: 1 big left (60%) + 2 stacked right (40%)
         rows.push(
-          <div key={`r${i}`} className="grid grid-cols-1 md:grid-cols-5 gap-3" style={{height: 'auto'}}>
-            <div className="md:col-span-3 h-[280px] md:h-[486px]">{renderCard(filtered[i], true)}</div>
-            <div className="md:col-span-2 flex flex-col gap-3">
-              <div className="h-[200px] md:h-[240px]">{renderCard(filtered[i+1])}</div>
-              <div className="h-[200px] md:h-[240px]">{renderCard(filtered[i+2])}</div>
+          <div key={`r${i}`} className="grid grid-cols-5 gap-2 md:gap-3" style={{height: 'auto'}}>
+            <div className="col-span-3 h-[180px] md:h-[486px]">{renderCard(filtered[i], true)}</div>
+            <div className="col-span-2 flex flex-col gap-2 md:gap-3">
+              <div className="h-[87px] md:h-[240px]">{renderCard(filtered[i+1])}</div>
+              <div className="h-[87px] md:h-[240px]">{renderCard(filtered[i+2])}</div>
             </div>
           </div>
         );
@@ -102,31 +102,31 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
       } else if (pattern % 4 === 1 && r >= 3) {
         // Row: 3 equal
         rows.push(
-          <div key={`r${i}`} className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div className="h-[280px] md:h-[350px]">{renderCard(filtered[i])}</div>
-            <div className="h-[280px] md:h-[350px]">{renderCard(filtered[i+1])}</div>
-            <div className="h-[280px] md:h-[350px]">{renderCard(filtered[i+2])}</div>
+          <div key={`r${i}`} className="grid grid-cols-3 gap-2 md:gap-3">
+            <div className="h-[140px] md:h-[350px]">{renderCard(filtered[i])}</div>
+            <div className="h-[140px] md:h-[350px]">{renderCard(filtered[i+1])}</div>
+            <div className="h-[140px] md:h-[350px]">{renderCard(filtered[i+2])}</div>
           </div>
         );
         i += 3;
       } else if (pattern % 4 === 2 && r >= 3) {
         // Row: 2 stacked left (40%) + 1 big right (60%)
         rows.push(
-          <div key={`r${i}`} className="grid grid-cols-1 md:grid-cols-5 gap-3" style={{height: 'auto'}}>
-            <div className="md:col-span-2 flex flex-col gap-3">
-              <div className="h-[200px] md:h-[240px]">{renderCard(filtered[i])}</div>
-              <div className="h-[200px] md:h-[240px]">{renderCard(filtered[i+1])}</div>
+          <div key={`r${i}`} className="grid grid-cols-5 gap-2 md:gap-3" style={{height: 'auto'}}>
+            <div className="col-span-2 flex flex-col gap-2 md:gap-3">
+              <div className="h-[87px] md:h-[240px]">{renderCard(filtered[i])}</div>
+              <div className="h-[87px] md:h-[240px]">{renderCard(filtered[i+1])}</div>
             </div>
-            <div className="md:col-span-3 h-[280px] md:h-[486px]">{renderCard(filtered[i+2], true)}</div>
+            <div className="col-span-3 h-[180px] md:h-[486px]">{renderCard(filtered[i+2], true)}</div>
           </div>
         );
         i += 3;
       } else if (pattern % 4 === 3 && r >= 2) {
         // Row: 2 equal wide
         rows.push(
-          <div key={`r${i}`} className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div className="h-[280px] md:h-[380px]">{renderCard(filtered[i], true)}</div>
-            <div className="h-[280px] md:h-[380px]">{renderCard(filtered[i+1])}</div>
+          <div key={`r${i}`} className="grid grid-cols-2 gap-2 md:gap-3">
+            <div className="h-[160px] md:h-[380px]">{renderCard(filtered[i], true)}</div>
+            <div className="h-[160px] md:h-[380px]">{renderCard(filtered[i+1])}</div>
           </div>
         );
         i += 2;
@@ -134,9 +134,9 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
         // Fallback: fill remaining into 2 or 3 cols
         const cols = r >= 3 ? 3 : r >= 2 ? 2 : 1;
         rows.push(
-          <div key={`r${i}`} className={`grid grid-cols-1 ${cols >= 3 ? "sm:grid-cols-3" : cols >= 2 ? "sm:grid-cols-2" : ""} gap-3`}>
+          <div key={`r${i}`} className={`grid ${cols >= 3 ? "grid-cols-3" : cols >= 2 ? "grid-cols-2" : "grid-cols-1"} gap-2 md:gap-3`}>
             {filtered.slice(i, i + cols).map((item) => (
-              <div key={item.id} className="h-[280px] md:h-[350px]">{renderCard(item)}</div>
+              <div key={item.id} className="h-[140px] md:h-[350px]">{renderCard(item)}</div>
             ))}
           </div>
         );
@@ -150,12 +150,12 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
   return (
     <>
       {/* Filters */}
-      <div className="flex items-center justify-center gap-2 md:gap-3 flex-wrap mb-6">
+      <div className="flex items-center justify-center gap-1.5 md:gap-3 flex-wrap mb-4 md:mb-6">
         {categories.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setActiveFilter(cat.id)}
-            className={`px-5 py-2.5 rounded-full text-sm font-medium tracking-wide transition-all duration-300 ${
+            className={`px-3 py-1.5 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-medium tracking-wide transition-all duration-300 ${
               activeFilter === cat.id
                 ? "bg-gradient-to-r from-[var(--color-gold-dark)] to-[var(--color-gold)] text-white shadow-lg shadow-[var(--color-gold)]/20"
                 : "bg-white text-[var(--color-text-mid)] hover:bg-[var(--color-cream)] border border-[var(--color-cream-dark)]"
