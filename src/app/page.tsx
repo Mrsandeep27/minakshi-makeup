@@ -1,12 +1,23 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { siteConfig, stats, services, marqueeItems, reviews, portfolio } from "@/lib/data";
 import HeroSection from "@/components/HeroSection";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
-import ProcessTimeline from "@/components/ProcessTimeline";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
-import InstaGrid from "@/components/InstaGrid";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import { SkeletonBlock } from "@/components/Skeleton";
+
+const ProcessTimeline = dynamic(() => import("@/components/ProcessTimeline"), {
+  loading: () => <div className="py-6 px-5"><div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-7xl mx-auto">{[...Array(4)].map((_, i) => <SkeletonBlock key={i} className="h-20 md:h-32" />)}</div></div>,
+});
+const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarousel"), {
+  loading: () => <div className="flex gap-4 px-5 overflow-hidden">{[...Array(3)].map((_, i) => <SkeletonBlock key={i} className="flex-shrink-0 w-[260px] h-[200px] rounded-2xl" />)}</div>,
+});
+const InstaGrid = dynamic(() => import("@/components/InstaGrid"), {
+  loading: () => <div className="grid grid-cols-4 gap-1.5 px-5">{[...Array(8)].map((_, i) => <SkeletonBlock key={i} className="aspect-square" />)}</div>,
+});
+const BeforeAfterSlider = dynamic(() => import("@/components/BeforeAfterSlider"), {
+  loading: () => <SkeletonBlock className="h-[220px] md:h-[500px] max-w-4xl mx-auto rounded-2xl" />,
+});
 
 const instaPosts = [
   { image: "/images/portfolio/marathi-bride.jpg", caption: "Marathi bride" },
