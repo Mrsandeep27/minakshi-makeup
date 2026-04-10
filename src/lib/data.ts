@@ -8,11 +8,11 @@ export const siteConfig = {
   owner: "Minakshi",
   tagline: "Jahan Beauty Milti Hai Artistry Se",
   description: "Mumbai ki trusted Bridal Makeup Artist. 8+ saal ka experience, 500+ khush dulhanein. Har culture, har style — aapki khoobsurti humari zimmedari.",
-  phone: "+91XXXXXXXXXX", // Client to provide
+  phone: "+919172235347",
   email: "minakshimakeupandhair@gmail.com", // placeholder
   instagram: "https://www.instagram.com/minakshimakeupandhair",
   youtube: "https://youtube.com/@minakshimakeupandhair",
-  whatsappLink: "https://wa.me/91XXXXXXXXXX?text=Hi%20Minakshi%2C%20mujhe%20bridal%20makeup%20ke%20baare%20mein%20jaanna%20hai.%20Please%20details%20share%20karein!",
+  whatsappLink: "https://wa.me/919172235347?text=Hi%20Minakshi%2C%20mujhe%20bridal%20makeup%20ke%20baare%20mein%20jaanna%20hai.%20Please%20details%20share%20karein!",
   googleReviewsLink: "https://g.co/kgs/abc123", // placeholder
   location: "Mumbai (Vasai-Virar)",
   availability: "Poori Duniya Mein Available",
