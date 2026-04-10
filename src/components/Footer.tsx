@@ -62,9 +62,9 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-sm text-white/60 leading-relaxed mt-4">
-                Mumbai ki professional Bridal Makeup Artist.
-                8+ saal se stunning bridal looks bana rahi hoon.
-                Destination weddings ke liye globally available.
+                Mumbai&apos;s professional Bridal Makeup Artist.
+                Creating stunning bridal looks for 8+ years.
+                Available globally for destination weddings.
               </p>
             </div>
 
@@ -122,7 +122,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Minakshi Makeup & Hair. All rights reserved.
             </p>
             <p className="text-xs text-white/40">
-              Sundar dulhanon ke liye pyaar se banaya gaya
+              Crafted with love for beautiful brides
             </p>
           </div>
         </div>

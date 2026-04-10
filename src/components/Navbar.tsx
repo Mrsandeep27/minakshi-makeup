@@ -94,7 +94,7 @@ export default function Navbar() {
               href="/contact"
               className="btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide hover:shadow-[var(--shadow-gold)] transition-shadow"
             >
-              Availability Dekho
+              Check Availability
             </Link>
           </div>
 

@@ -16,12 +16,12 @@ export default function ProcessTimeline() {
     <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
       <div className="max-w-7xl mx-auto px-5 md:px-6">
         <ScrollReveal className="hidden md:block text-center mb-16">
-          <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Kaise Hota Hai</span>
+          <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">How It Works</span>
           <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
-            Aapka Safar <span className="text-gold-gradient italic">Bridal Beauty</span> Tak
+            Your Journey to <span className="text-gold-gradient italic">Bridal Beauty</span>
           </h2>
           <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
-            Pehli inquiry se lekar aapke big day tak — ek seamless, personalized experience.
+            From your first inquiry to your big day — a seamless, personalized experience.
           </p>
         </ScrollReveal>
 

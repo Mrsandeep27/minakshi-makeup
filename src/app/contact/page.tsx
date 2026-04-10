@@ -19,10 +19,10 @@ export default function ContactPage() {
       <section className="pt-20 pb-2 md:pt-28 md:pb-6 bg-[var(--color-cream)]">
         <div className="max-w-7xl mx-auto px-5 md:px-6 text-center">
           <h1 className="font-[var(--font-heading)] text-xl md:text-5xl font-bold text-[var(--color-text)]">
-            Milke <span className="text-gold-gradient italic">Jadoo Create Karte Hain</span>
+            Let&apos;s Create <span className="text-gold-gradient italic">Magic Together</span>
           </h1>
           <p className="text-[var(--color-text-mid)] text-sm md:text-base mt-2 md:mt-4 max-w-xl mx-auto">
-            WhatsApp pe sabse fast reply milta hai, ya neeche form fill karo.
+            WhatsApp gives you the fastest reply, or fill out the form below.
           </p>
 
           {/* Availability Badge */}
@@ -65,7 +65,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="bg-white rounded-xl p-4 border border-[var(--color-cream-dark)]">
               <h3 className="font-[var(--font-heading)] text-base font-semibold text-[var(--color-text)] mb-3">
-                Inquiry Bhejo
+                Send Inquiry
               </h3>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -73,7 +73,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     required
-                    placeholder="Naam *"
+                    placeholder="Name *"
                     className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                   />
                   <input
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   required
                   className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                 >
-                  <option value="">Event type select karo *</option>
+                  <option value="">Select event type *</option>
                   <option value="bridal">Bridal Makeup</option>
                   <option value="engagement">Engagement Makeup</option>
                   <option value="reception">Reception Makeup</option>
@@ -107,7 +107,7 @@ export default function ContactPage() {
 
                 <textarea
                   rows={3}
-                  placeholder="Apne look ka vision bataao..."
+                  placeholder="Tell me about your vision..."
                   className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors resize-none"
                 />
 
@@ -120,7 +120,7 @@ export default function ContactPage() {
                       : "btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white"
                   }`}
                 >
-                  {submitted ? "Bhej Di! Jaldi reply karenge." : "Inquiry Bhejo"}
+                  {submitted ? "Inquiry Sent! We'll get back soon." : "Send Inquiry"}
                 </button>
               </form>
             </div>
@@ -133,10 +133,10 @@ export default function ContactPage() {
                 {/* WhatsApp CTA */}
                 <div className="bg-white rounded-2xl p-8 border border-[var(--color-cream-dark)]">
                   <h3 className="font-[var(--font-heading)] text-xl font-semibold text-[var(--color-text)] mb-2">
-                    Sabse Fast Tarika
+                    Fastest Way to Reach Me
                   </h3>
                   <p className="text-sm text-[var(--color-text-mid)] mb-6">
-                    WhatsApp pe sabse jaldi reply milta hai. Usually 1-2 ghante mein reply karti hoon.
+                    WhatsApp gives you the fastest reply. I usually respond within 1-2 hours.
                   </p>
                   <a
                     href={siteConfig.whatsappLink}
@@ -162,7 +162,7 @@ export default function ContactPage() {
                     <div>
                       <div className="font-semibold text-sm text-[var(--color-text)]">Location</div>
                       <div className="text-sm text-[var(--color-text-mid)]">Mumbai (Vasai-Virar), Maharashtra</div>
-                      <div className="text-xs text-[var(--color-gold-dark)] mt-1">Destination Weddings ke liye globally available</div>
+                      <div className="text-xs text-[var(--color-gold-dark)] mt-1">Available globally for destination weddings</div>
                     </div>
                   </div>
 
@@ -192,22 +192,22 @@ export default function ContactPage() {
             {/* Right - Form */}
             <ScrollReveal variant="right">
               <div className="bg-white rounded-2xl p-8 border border-[var(--color-cream-dark)]">
-                <h3 className="font-[var(--font-heading)] text-xl font-semibold text-[var(--color-text)] mb-2">Inquiry Bhejo</h3>
-                <p className="text-sm text-[var(--color-text-mid)] mb-8">Form fill karo aur main 24 ghante mein reply karungi.</p>
+                <h3 className="font-[var(--font-heading)] text-xl font-semibold text-[var(--color-text)] mb-2">Send Inquiry</h3>
+                <p className="text-sm text-[var(--color-text-mid)] mb-8">Fill out the form and I&apos;ll reply within 24 hours.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Aapka Naam *</label>
-                    <input type="text" required placeholder="Apna poora naam likhein" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
+                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Your Name *</label>
+                    <input type="text" required placeholder="Enter your full name" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Phone / WhatsApp *</label>
                     <input type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Ka Type *</label>
+                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Type *</label>
                     <select required className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors">
-                      <option value="">Event type select karo</option>
+                      <option value="">Select event type</option>
                       <option value="bridal">Bridal Makeup</option>
                       <option value="engagement">Engagement Makeup</option>
                       <option value="reception">Reception Makeup</option>
@@ -220,12 +220,12 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Ki Date</label>
+                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Date</label>
                     <input type="date" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Message</label>
-                    <textarea rows={4} placeholder="Apne look ka vision bataao, koi preferences, outfit details..." className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors resize-none" />
+                    <textarea rows={4} placeholder="Tell me about your vision, any preferences, outfit details..." className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors resize-none" />
                   </div>
                   <button
                     type="submit"
@@ -234,7 +234,7 @@ export default function ContactPage() {
                       submitted ? "bg-green-500 text-white" : "bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)]"
                     }`}
                   >
-                    {submitted ? "Inquiry Bhej Di! Jaldi reply karenge." : "Inquiry Bhejo"}
+                    {submitted ? "Inquiry Bhej Di! Jaldi reply karenge." : "Send Inquiry"}
                   </button>
                 </form>
               </div>

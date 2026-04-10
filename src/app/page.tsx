@@ -68,15 +68,15 @@ export default function HomePage() {
             <div className="hidden md:flex items-center gap-8 text-xs tracking-wider uppercase text-[var(--color-text-light)]">
               <span className="flex items-center gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" /></svg>
-                500+ Families Ka Bharosa
+                Trusted by 500+ Families
               </span>
               <span className="flex items-center gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                Poori Duniya Mein Available
+                Available Globally
               </span>
               <span className="flex items-center gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
-                100% Satisfaction Ki Guarantee
+                100% Satisfaction Guaranteed
               </span>
             </div>
           </div>
@@ -103,12 +103,12 @@ export default function HomePage() {
       <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
         <div className="max-w-7xl mx-auto px-5 md:px-6">
           <ScrollReveal className="hidden md:block text-center mb-14">
-            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Hamari Dulhanein</span>
+            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Featured Brides</span>
             <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               Real Brides, <span className="text-gold-gradient italic">Real Glow</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
-              Ye hain humari kuch dulhanein jinhe humne unke sabse khaas din pe sajaya. No filter, no editing — sirf real beauty.
+              A glimpse of some of our beautiful brides on their most special day. No filter, no editing — just real beauty.
             </p>
           </ScrollReveal>
 
@@ -186,7 +186,7 @@ export default function HomePage() {
               href="/portfolio"
               className="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)] transition-all duration-300 hover:scale-105"
             >
-              Poora Portfolio Dekho ({portfolio.length}+ Looks)
+              View Full Portfolio ({portfolio.length}+ Looks)
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </Link>
           </ScrollReveal>
@@ -231,12 +231,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex-1 min-w-0">
-              <span className="font-[var(--font-accent)] text-[10px] tracking-[0.2em] uppercase text-[var(--color-gold)]">Minakshi Ke Baare Mein</span>
+              <span className="font-[var(--font-accent)] text-[10px] tracking-[0.2em] uppercase text-[var(--color-gold)]">About Minakshi</span>
               <h2 className="font-[var(--font-heading)] text-base font-bold text-[var(--color-text)] mt-1 leading-tight">
-                Har Dulhan Banti Hai Ek <span className="text-gold-gradient italic">Masterpiece</span>
+                Every Bride Becomes a <span className="text-gold-gradient italic">Masterpiece</span>
               </h2>
               <p className="text-[var(--color-text-mid)] text-xs mt-2 leading-relaxed line-clamp-4">
-                8+ saal ke experience ke saath, 500+ dulhanon ko sajaya hai. Mumbai ke Vasai-Virar se based, globally available — har culture ki bridal artistry mein expert.
+                8+ years of experience, 500+ happy brides. Based in Mumbai (Vasai-Virar), available globally — expert in every culture&apos;s bridal artistry.
               </p>
               <div className="flex flex-wrap gap-1.5 mt-3">
                 {["Multi-Cultural", "HD Makeup", "No-Lash Natural"].map((tag) => (
@@ -249,7 +249,7 @@ export default function HomePage() {
                 href="/portfolio"
                 className="btn-shimmer inline-flex items-center gap-1.5 mt-3 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-4 py-2 rounded-full font-semibold text-xs tracking-wide"
               >
-                Mera Kaam Dekho
+                View My Work
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </div>
@@ -281,19 +281,18 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal variant="right">
-              <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Minakshi Ke Baare Mein</span>
+              <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">About Minakshi</span>
               <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3 leading-tight">
-                Har Dulhan Banti Hai Ek <span className="text-gold-gradient italic">Masterpiece</span>
+                Every Bride Becomes a <span className="text-gold-gradient italic">Masterpiece</span>
               </h2>
               <p className="text-[var(--color-text-mid)] mt-6 leading-relaxed">
-                8+ saal ke experience ke saath, mujhe 500+ dulhanon ko unke sabse sundar
-                roop mein sajane ka maan mila hai. Mumbai ke Vasai-Virar area se based hoon aur globally available —
-                Marathi, South Indian, Bengali aur Buddhist — har culture ki bridal artistry mein expert hoon.
+                With over 8 years of experience, I&apos;ve had the honour of making 500+ brides feel their most beautiful.
+                Based in Mumbai&apos;s Vasai-Virar area and available globally — I specialize in multi-cultural bridal artistry
+                across Marathi, South Indian, Bengali, and Buddhist styles.
               </p>
               <p className="text-[var(--color-text-mid)] mt-4 leading-relaxed">
-                Meri philosophy simple hai: &ldquo;No filter ahead.&rdquo; Main aapki natural beauty ko enhance karti hoon,
-                mask nahi karti. Har brush stroke aapki khoobsurti ka celebration hai, aur aapka special day
-                truly unforgettable bana dena — yahi mera kaam hai.
+                My philosophy is simple: &ldquo;No filter ahead.&rdquo; I enhance your natural beauty rather than masking it.
+                Every brush stroke is a celebration of who you are — making your special day truly unforgettable.
               </p>
 
               <div className="flex flex-wrap gap-3 mt-8">
@@ -308,7 +307,7 @@ export default function HomePage() {
                 href="/portfolio"
                 className="btn-shimmer inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-8 py-3.5 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)] transition-all duration-300 hover:scale-105"
               >
-                <span>Mera Kaam Dekho</span>
+                <span>View My Work</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </ScrollReveal>
@@ -322,7 +321,7 @@ export default function HomePage() {
           <ScrollReveal className="hidden md:block text-center mb-14">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Transformation</span>
             <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
-              Dekho <span className="text-gold-gradient italic">Jadoo Hote Hue</span>
+              See the <span className="text-gold-gradient italic">Magic Happen</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
               Slider drag karke dekho real bridal transformation. No filters. No editing. Sirf pure artistry.
@@ -363,13 +362,12 @@ export default function HomePage() {
       <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
         <div className="max-w-7xl mx-auto px-5 md:px-6">
           <ScrollReveal className="hidden md:block text-center mb-16">
-            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Humari Services</span>
+            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Our Services</span>
             <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
-              Aapke Special Day Ke Liye <span className="text-gold-gradient italic">Bani Services</span>
+              Crafted for Your <span className="text-gold-gradient italic">Special Day</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-2xl mx-auto">
-              Har dulhan unique hoti hai. Traditional look ho ya modern glam —
-              main har service ko aapke vision ke hisaab se tailor karti hoon.
+              Every bride is unique. Whether traditional or modern glam — I tailor every service to bring your vision to life.
             </p>
           </ScrollReveal>
 
@@ -450,17 +448,17 @@ export default function HomePage() {
               <span className="text-white/90 text-sm font-medium">{siteConfig.bookingStatus}</span>
             </div>
             <h2 className="font-[var(--font-heading)] text-2xl md:text-5xl font-bold text-white mt-2 leading-tight">
-              Apne Special Day Ko Banao<br /><span className="text-gold-gradient italic">Unforgettable</span>
+              Make Your Special Day<br /><span className="text-gold-gradient italic">Unforgettable</span>
             </h2>
             <p className="text-white/60 mt-3 md:mt-4 max-w-xl mx-auto text-sm md:text-base">
-              2025-2026 season ke liye limited dates bachi hain. Aaj hi trial session book karo.
+              Limited dates available for the 2025-2026 season. Book your trial session today.
             </p>
             <div className="flex flex-row items-center justify-center gap-3 mt-5 md:mt-8">
               <Link
                 href="/contact"
                 className="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-5 py-3 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-sm tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
               >
-                Availability Check Karo
+                Check Availability
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
               <a
@@ -470,7 +468,7 @@ export default function HomePage() {
                 className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-sm tracking-wide hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
-                WhatsApp Karo
+                WhatsApp Now
               </a>
             </div>
           </ScrollReveal>
@@ -486,7 +484,7 @@ export default function HomePage() {
           <ScrollReveal className="hidden md:block text-center mb-14">
             <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Reviews</span>
             <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
-              Humari <span className="text-gold-gradient italic">Dulhanein Kya Kehti Hain</span>
+              What Our <span className="text-gold-gradient italic">Brides Say</span>
             </h2>
             <div className="flex items-center justify-center gap-3 mt-5">
               <div className="flex items-center gap-1 bg-white border border-[var(--color-cream-dark)] rounded-full px-4 py-2 shadow-sm">
@@ -540,11 +538,11 @@ export default function HomePage() {
       <section className="py-3 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-5 md:px-6">
           <ScrollReveal className="hidden md:block text-center mb-12">
-            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Instagram Pe Dekho</span>
+            <span className="font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Follow on Instagram</span>
             <h2 className="font-[var(--font-heading)] text-4xl font-bold text-[var(--color-text)] mt-3">
               @minakshimakeupandhair
             </h2>
-            <p className="text-[var(--color-text-mid)] mt-3">Real kaam. Real dulhanein. Real transformations.</p>
+            <p className="text-[var(--color-text-mid)] mt-3">Real work. Real brides. Real transformations.</p>
           </ScrollReveal>
 
           <ScrollReveal>
@@ -577,18 +575,18 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-5 md:px-6 text-center relative z-10">
           <ScrollReveal>
             <h2 className="font-[var(--font-heading)] text-xl md:text-5xl font-bold text-white leading-tight">
-              Apne Sabse <span className="text-gold-gradient italic">Sundar Look</span> Ke Liye Ready?
+              Ready to Look Your Most <span className="text-gold-gradient italic">Beautiful</span>?
             </h2>
             <p className="text-white/50 mt-3 md:mt-6 text-sm md:text-lg">
-              Aao milke baat karte hain aapke vision ke baare mein aur ek aisa look create karte hain jo sirf aapka ho.
-              Limited dates hain — jaldi book karo.
+              Let&apos;s discuss your vision and create a look that&apos;s uniquely yours.
+              Limited dates available — aaj hi book karo!
             </p>
             <div className="flex flex-row items-center justify-center gap-3 mt-6 md:mt-10">
               <Link
                 href="/contact"
                 className="btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-5 py-3 md:px-9 md:py-4 rounded-full font-semibold text-xs md:text-base tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
               >
-                Availability Check Karo
+                Check Availability
               </Link>
               <a
                 href={siteConfig.whatsappLink}
@@ -597,7 +595,7 @@ export default function HomePage() {
                 className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 md:px-9 md:py-4 rounded-full font-semibold text-xs md:text-base tracking-wide hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
-                WhatsApp Karo
+                WhatsApp Now
               </a>
             </div>
           </ScrollReveal>

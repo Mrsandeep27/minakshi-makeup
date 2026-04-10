@@ -13,13 +13,13 @@ export default function PortfolioPage() {
         <div className="absolute top-0 right-0 w-72 h-72 bg-[var(--color-gold)]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-[var(--color-gold)]/5 rounded-full blur-3xl" />
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center relative z-10">
-          <span className="hidden md:block font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Mera Kaam</span>
+          <span className="hidden md:block font-[var(--font-accent)] text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">My Work</span>
           <h1 className="font-[var(--font-heading)] text-xl md:text-5xl font-bold text-[var(--color-text)] md:mt-3">
-            <span className="text-gold-gradient italic">Bridal Beauty</span> Ka Portfolio
+            Portfolio of <span className="text-gold-gradient italic">Bridal Beauty</span>
           </h1>
           <p className="hidden md:block text-[var(--color-text-mid)] mt-4 max-w-2xl mx-auto">
-            Meri best bridal transformations ka ek curated showcase — har culture, har style.
-            Har look mein ek unique kahani hai pyaar aur khoobsurti ki.
+            A curated showcase of my best bridal transformations across cultures and styles.
+            Every look tells a unique story of love and beauty.
           </p>
           <div className="flex items-center justify-center gap-4 md:gap-6 mt-2 md:mt-6 text-xs md:text-sm text-[var(--color-text-mid)]">
             <span className="flex items-center gap-1">
@@ -51,10 +51,10 @@ export default function PortfolioPage() {
         <div className="max-w-3xl mx-auto px-4 md:px-6 text-center relative z-10">
           <ScrollReveal>
             <h2 className="font-[var(--font-heading)] text-xl md:text-4xl font-bold text-white">
-              Pasand Aaya Jo Dikha?
+              Love What You See?
             </h2>
             <p className="text-white/50 text-sm md:text-base mt-2 md:mt-4">
-              Aao milke aapka apna stunning bridal look banate hain. Trial session book karo aur jadoo khud dekho.
+              Let&apos;s create your own stunning bridal look. Book a trial session and see the magic in person.
             </p>
             <div className="flex flex-row items-center justify-center gap-3 md:gap-4 mt-4 md:mt-8">
               <Link
