@@ -85,14 +85,6 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-8 animate-[fadeInUp_0.8s_ease_forwards]">
-          <span className="w-2 h-2 bg-[var(--color-gold)] rounded-full animate-pulse" />
-          <span className="text-white/90 text-sm font-medium">
-            Mumbai&apos;s Trusted Bridal Makeup Artist
-          </span>
-        </div>
-
         {/* Title */}
         <h1 className="font-[var(--font-heading)] text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-[1.05] animate-[fadeInUp_0.8s_ease_0.2s_forwards] opacity-0" style={{textShadow: '0 4px 30px rgba(0,0,0,0.5)'}}>
           Where Beauty
