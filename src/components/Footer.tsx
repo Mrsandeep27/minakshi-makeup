@@ -23,7 +23,6 @@ export default function Footer() {
             <Link href="/" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Home</Link>
             <Link href="/services" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Services</Link>
             <Link href="/portfolio" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Portfolio</Link>
-            <Link href="/reviews" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Reviews</Link>
             <Link href="/contact" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Contact</Link>
           </div>
 
@@ -76,7 +75,6 @@ export default function Footer() {
                 <Link href="/" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Home</Link>
                 <Link href="/services" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Services</Link>
                 <Link href="/portfolio" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Portfolio</Link>
-                <Link href="/reviews" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Reviews</Link>
                 <Link href="/contact" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Contact</Link>
               </div>
             </div>

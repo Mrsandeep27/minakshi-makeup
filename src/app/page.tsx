@@ -519,10 +519,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <ScrollReveal className="hidden md:block text-center mt-12">
             <Link
-              href="/reviews"
+              href="/contact"
               className="inline-flex items-center gap-2 font-medium text-sm text-[var(--color-gold-dark)] hover:text-[var(--color-gold)] transition-colors tracking-wide border border-[var(--color-gold-glow)] hover:border-[var(--color-gold)] px-6 py-3 rounded-full hover:bg-[var(--color-gold-soft)] transition-all duration-300"
             >
-              Saare {siteConfig.reviewCount}+ Reviews Padho
+              Apna Trial Book Karo
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </Link>
           </ScrollReveal>
