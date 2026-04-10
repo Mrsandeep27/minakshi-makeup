@@ -89,15 +89,15 @@ export default function HeroSection() {
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-8 animate-[fadeInUp_0.8s_ease_forwards]">
           <span className="w-2 h-2 bg-[var(--color-gold)] rounded-full animate-pulse" />
           <span className="text-white/90 text-sm font-medium">
-            Mumbai ki Trusted Bridal Makeup Artist
+            Mumbai&apos;s Trusted Bridal Makeup Artist
           </span>
         </div>
 
         {/* Title */}
         <h1 className="font-[var(--font-heading)] text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-[1.05] animate-[fadeInUp_0.8s_ease_0.2s_forwards] opacity-0" style={{textShadow: '0 4px 30px rgba(0,0,0,0.5)'}}>
-          Jahan Beauty
+          Where Beauty
           <br />
-          <span className="text-gold-gradient italic" style={{filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.3))'}}>Milti Hai Artistry Se</span>
+          <span className="text-gold-gradient italic" style={{filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.3))'}}>Meets Artistry</span>
         </h1>
 
         {/* Typewriter subtitle */}
@@ -114,8 +114,8 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-white/80 text-sm md:text-lg max-w-2xl mx-auto mt-3 md:mt-4 leading-relaxed animate-[fadeInUp_0.8s_ease_0.5s_forwards] opacity-0" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>
-          Premium bridal makeup jo aapki natural beauty ko enhance kare,
-          poore din flawless rahe, aur aapka special day truly unforgettable bana de.
+          Premium bridal makeup that enhances your natural beauty,
+          stays flawless all day, and makes your special day truly unforgettable.
         </p>
 
         {/* CTAs */}
@@ -124,7 +124,7 @@ export default function HeroSection() {
             href="/contact"
             className="btn-shimmer flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
           >
-            <span>Apna Bridal Trial Book Karo</span>
+            <span>Book Your Bridal Trial</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>
           <Link
@@ -132,7 +132,7 @@ export default function HeroSection() {
             className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:bg-white/20 hover:border-white/50 transition-all duration-300"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg>
-            Mera Kaam Dekho
+            View My Work
           </Link>
         </div>
 

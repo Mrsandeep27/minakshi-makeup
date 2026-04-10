@@ -21,8 +21,8 @@ export default function Footer() {
           {/* Quick Links - horizontal */}
           <div className="flex flex-wrap gap-x-4 gap-y-1 mb-4">
             <Link href="/" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Home</Link>
-            <Link href="/services" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Services</Link>
             <Link href="/portfolio" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Portfolio</Link>
+            <Link href="/services" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Services</Link>
             <Link href="/contact" className="text-xs text-white/60 hover:text-[var(--color-gold)]">Contact</Link>
           </div>
 
@@ -73,8 +73,8 @@ export default function Footer() {
               <h4 className="font-[var(--font-heading)] text-white text-sm font-semibold mb-4 tracking-wide">Quick Links</h4>
               <div className="flex flex-col gap-2.5">
                 <Link href="/" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Home</Link>
-                <Link href="/services" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Services</Link>
                 <Link href="/portfolio" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Portfolio</Link>
+                <Link href="/services" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Services</Link>
                 <Link href="/contact" className="text-sm text-white/60 hover:text-[var(--color-gold)] transition-colors">Contact</Link>
               </div>
             </div>
