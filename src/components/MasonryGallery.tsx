@@ -60,7 +60,7 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
       className="group cursor-pointer relative rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 h-full"
       onClick={() => setLightbox(item.id)}
     >
-      <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+      <img src={item.image} alt={item.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
 
       {/* Overlay */}
       <div className={`absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent ${isBig ? "opacity-100" : "opacity-0 group-hover:opacity-100"} transition-opacity duration-300`}>

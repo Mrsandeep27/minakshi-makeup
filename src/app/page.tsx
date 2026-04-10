@@ -117,7 +117,7 @@ export default function HomePage() {
             {/* Tall left */}
             <ScrollReveal delay={0} className="col-span-1 row-span-2">
               <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img src="/images/portfolio/glamorous-engagement.jpg" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/glamorous-engagement.jpg" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
                   <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
@@ -129,7 +129,7 @@ export default function HomePage() {
             {/* Top row middle */}
             <ScrollReveal delay={80}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img src="/images/portfolio/marathi-bride.jpg" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/marathi-bride.jpg" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Marathi Dulhan</span>
@@ -139,7 +139,7 @@ export default function HomePage() {
 
             <ScrollReveal delay={120}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img src="/images/portfolio/soft-pink-bride.jpg" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/soft-pink-bride.jpg" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Soft Pink Bride</span>
@@ -150,7 +150,7 @@ export default function HomePage() {
             {/* Tall right */}
             <ScrollReveal delay={160} className="col-span-1 row-span-2">
               <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img src="/images/portfolio/glowing-wedding.jpg" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/glowing-wedding.jpg" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
                   <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
@@ -162,7 +162,7 @@ export default function HomePage() {
             {/* Bottom row middle */}
             <ScrollReveal delay={200}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img src="/images/portfolio/reception-makeover.jpg" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/reception-makeover.jpg" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Reception Makeover</span>
@@ -172,7 +172,7 @@ export default function HomePage() {
 
             <ScrollReveal delay={240}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img src="/images/portfolio/hd-siders-look.jpg" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/hd-siders-look.jpg" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">HD Siders Look</span>
@@ -211,7 +211,7 @@ export default function HomePage() {
             "/images/portfolio/wedding-classic.jpg",
           ].map((src, i) => (
             <div key={i} className="flex-shrink-0 w-[150px] h-[190px] md:w-[280px] md:h-[350px]">
-              <img src={src} alt="" className="w-full h-full object-cover" />
+              <img loading="lazy" decoding="async" src={src} alt="" className="w-full h-full object-cover" />
             </div>
           ))}
         </div>
@@ -224,8 +224,7 @@ export default function HomePage() {
           <div className="flex gap-4 md:hidden items-start">
             <div className="flex-shrink-0 w-[120px]">
               <div className="relative rounded-xl overflow-hidden gold-frame-glow">
-                <img
-                  src="/images/about-main.jpg"
+                <img loading="lazy" decoding="async"                   src="/images/about-main.jpg"
                   alt="Minakshi at work"
                   className="w-full h-[160px] object-cover" style={{objectPosition: 'center 30%'}}
                 />
@@ -261,8 +260,7 @@ export default function HomePage() {
             <ScrollReveal variant="left">
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden gold-frame-glow">
-                  <img
-                    src="/images/about-main.jpg"
+                  <img loading="lazy" decoding="async"                     src="/images/about-main.jpg"
                     alt="Minakshi at work"
                     className="w-full h-[520px] object-cover" style={{objectPosition: 'center 30%'}}
                   />
@@ -274,8 +272,7 @@ export default function HomePage() {
                     <div className="text-xs text-white/60">Bridal Artistry</div>
                   </div>
                 </div>
-                <img
-                  src="/images/about-detail.jpg"
+                <img loading="lazy" decoding="async"                   src="/images/about-detail.jpg"
                   alt="Makeup detail"
                   className="absolute -top-6 -left-6 w-36 h-44 object-cover rounded-2xl shadow-xl border-4 border-white hover:scale-105 transition-transform duration-300"
                 />
@@ -381,8 +378,7 @@ export default function HomePage() {
               <ScrollReveal key={service.id} delay={i * 100}>
                 <div className="group relative bg-white rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                   <div className="relative h-36 md:h-60 overflow-hidden">
-                    <img
-                      src={service.image}
+                    <img loading="lazy" decoding="async"                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style={{objectPosition: 'center 30%'}}
                     />
@@ -417,8 +413,7 @@ export default function HomePage() {
               <ScrollReveal key={service.id} delay={i * 100}>
                 <div className="group relative bg-white rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                   <div className="relative h-36 md:h-48 overflow-hidden">
-                    <img
-                      src={service.image}
+                    <img loading="lazy" decoding="async"                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style={{objectPosition: 'center 30%'}}
                     />
@@ -442,8 +437,7 @@ export default function HomePage() {
       {/* Parallax Booking Banner */}
       <section className="relative h-[240px] md:h-[400px] overflow-hidden">
         <div className="absolute inset-0 parallax-bg">
-          <img
-            src="/images/portfolio/cinematic-wedding.jpg"
+          <img loading="lazy" decoding="async"             src="/images/portfolio/cinematic-wedding.jpg"
             alt="Bridal beauty"
             className="w-full h-[120%] object-cover"
           />

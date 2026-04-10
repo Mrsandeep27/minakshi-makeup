@@ -32,8 +32,7 @@ export default function ServicesPage() {
                 <div className="group bg-white rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
                   {/* Image */}
                   <div className="relative w-full h-32 md:h-56 overflow-hidden">
-                    <img
-                      src={service.image}
+                    <img loading="lazy" decoding="async"                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       style={{objectPosition: 'center 30%'}}

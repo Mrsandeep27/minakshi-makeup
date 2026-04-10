@@ -28,8 +28,7 @@ export default function InstaGrid({ posts, username, instagramUrl }: InstaGridPr
           onMouseEnter={() => setHoveredIndex(i)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <img
-            src={post.image}
+          <img loading="lazy" decoding="async"             src={post.image}
             alt={post.caption || `Post ${i + 1}`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />

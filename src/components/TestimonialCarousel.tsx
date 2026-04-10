@@ -76,8 +76,7 @@ export default function TestimonialCarousel({ reviews }: TestimonialCarouselProp
 
             {/* Author */}
             <div className="flex items-center gap-3 mt-3 md:mt-5 pt-3 md:pt-4 border-t border-[var(--color-cream-dark)]">
-              <img
-                src={review.image}
+              <img loading="lazy" decoding="async"                 src={review.image}
                 alt={review.name}
                 className="w-11 h-11 rounded-full object-cover ring-2 ring-[var(--color-gold-glow)]"
               />
