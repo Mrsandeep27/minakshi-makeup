@@ -87,16 +87,16 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Title */}
         <h1 className="font-[var(--font-heading)] text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white leading-[1.05] animate-[fadeInUp_0.8s_ease_0.2s_forwards] opacity-0" style={{textShadow: '0 4px 30px rgba(0,0,0,0.5)'}}>
-          Where Beauty
+          Your Story,
           <br />
-          <span className="text-gold-gradient italic" style={{filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.3))'}}>Meets Artistry</span>
+          <span className="text-gold-gradient italic" style={{filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.3))'}}>Our Artistry</span>
         </h1>
 
         {/* Typewriter subtitle */}
         <div className="mt-6 animate-[fadeInUp_0.8s_ease_0.4s_forwards] opacity-0">
-          <span className="text-white/80 text-sm sm:text-base md:text-xl" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>Expert in </span>
+          <span className="text-white/80 text-sm sm:text-base md:text-xl" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>Crafting </span>
           <TypeWriter
-            words={["Bridal HD & Natural", "Pre-Wedding Functions", "Party Makeup", "Baby Shower Glam", "Makeup Classes", "Destination Bridal"]}
+            words={["Bridal Dreams", "Timeless Elegance", "Your Perfect Look", "Destination Glam", "Celebration Vibes", "Pure Confidence"]}
             className="text-[var(--color-gold)] text-sm sm:text-base md:text-xl font-semibold"
             typingSpeed={80}
             deletingSpeed={50}
@@ -106,8 +106,8 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-white/80 text-sm md:text-lg max-w-2xl mx-auto mt-3 md:mt-4 leading-relaxed animate-[fadeInUp_0.8s_ease_0.5s_forwards] opacity-0" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>
-          Premium bridal makeup that enhances your natural beauty,
-          stays flawless all day, and makes your special day truly unforgettable.
+          We don&apos;t just do makeup — we reveal the most beautiful version of you.
+          Flawless looks that last from vows to the last dance.
         </p>
 
         {/* CTAs + Stats side by side */}
