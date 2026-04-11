@@ -89,14 +89,13 @@ export default function ContactPage() {
                   className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                 >
                   <option value="">Select event type *</option>
-                  <option value="bridal">Bridal Makeup</option>
-                  <option value="engagement">Engagement Makeup</option>
-                  <option value="reception">Reception Makeup</option>
-                  <option value="south-indian">South Indian Bridal</option>
-                  <option value="bengali">Bengali Bridal</option>
-                  <option value="baby-shower">Baby Shower</option>
-                  <option value="hair">Hair Styling</option>
-                  <option value="package">Full Wedding Package</option>
+                  <option value="bridal">Bridal Makeup & Hair</option>
+                  <option value="pre-post-wedding">Pre / Post Wedding Functions</option>
+                  <option value="party">Party Makeup & Hair</option>
+                  <option value="baby-shower-birthday">Baby Shower / Birthday</option>
+                  <option value="classes">Makeup Classes / Workshops</option>
+                  <option value="grooming">Personal Grooming</option>
+                  <option value="destination">Destination Bridal Makeup</option>
                   <option value="other">Other</option>
                 </select>
 
@@ -208,14 +207,13 @@ export default function ContactPage() {
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Type *</label>
                     <select required className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors">
                       <option value="">Select event type</option>
-                      <option value="bridal">Bridal Makeup</option>
-                      <option value="engagement">Engagement Makeup</option>
-                      <option value="reception">Reception Makeup</option>
-                      <option value="south-indian">South Indian Bridal</option>
-                      <option value="bengali">Bengali Bridal</option>
-                      <option value="baby-shower">Baby Shower</option>
-                      <option value="hair">Hair Styling</option>
-                      <option value="package">Full Wedding Package</option>
+                      <option value="bridal">Bridal Makeup & Hair</option>
+                      <option value="pre-post-wedding">Pre / Post Wedding Functions</option>
+                      <option value="party">Party Makeup & Hair</option>
+                      <option value="baby-shower-birthday">Baby Shower / Birthday</option>
+                      <option value="classes">Makeup Classes / Workshops</option>
+                      <option value="grooming">Personal Grooming</option>
+                      <option value="destination">Destination Bridal Makeup</option>
                       <option value="other">Other</option>
                     </select>
                   </div>

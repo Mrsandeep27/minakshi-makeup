@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Montserrat, Cormorant_Garamond } from "next/font/google";
+import { Playfair_Display, Raleway, Italiana } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,27 +9,26 @@ import Preloader from "@/components/Preloader";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 
-// Heading font: DM Serif Display — closest free Google Font to client's Roxborough CF
-const dmSerif = DM_Serif_Display({
+// Heading font: Playfair Display — luxurious editorial serif
+const playfair = Playfair_Display({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
-// Body font: Montserrat — matches client's brand exactly
-const montserrat = Montserrat({
+// Body font: Raleway — clean, modern sans-serif
+const raleway = Raleway({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-// Accent font: Cormorant Garamond — for italic flourishes
-const cormorant = Cormorant_Garamond({
+// Accent font: Italiana — refined, fashion-forward
+const italiana = Italiana({
   variable: "--font-accent",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -64,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSerif.variable} ${montserrat.variable} ${cormorant.variable}`}
+      className={`${playfair.variable} ${raleway.variable} ${italiana.variable}`}
     >
       <body className="min-h-screen bg-[var(--color-off-white)] text-[var(--color-text)] antialiased">
         <Preloader />

@@ -96,7 +96,7 @@ export default function HeroSection() {
         <div className="mt-6 animate-[fadeInUp_0.8s_ease_0.4s_forwards] opacity-0">
           <span className="text-white/80 text-sm sm:text-base md:text-xl" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>Expert in </span>
           <TypeWriter
-            words={["Marathi Bridal Look", "South Indian Bridal", "Bengali Bridal", "Engagement Makeover", "Reception Glam", "Destination Weddings"]}
+            words={["Bridal HD & Natural", "Pre-Wedding Functions", "Party Makeup", "Baby Shower Glam", "Makeup Classes", "Destination Bridal"]}
             className="text-[var(--color-gold)] text-sm sm:text-base md:text-xl font-semibold"
             typingSpeed={80}
             deletingSpeed={50}

@@ -83,12 +83,13 @@ export default function Footer() {
             <div>
               <h4 className="font-[var(--font-heading)] text-white text-sm font-semibold mb-4 tracking-wide">Services</h4>
               <div className="flex flex-col gap-2.5">
-                <span className="text-sm text-white/60">Bridal Makeup</span>
-                <span className="text-sm text-white/60">Engagement Makeup</span>
-                <span className="text-sm text-white/60">Reception Makeup</span>
-                <span className="text-sm text-white/60">South Indian Bridal</span>
-                <span className="text-sm text-white/60">Hair Styling</span>
-                <span className="text-sm text-white/60">Cinematic Wedding Package</span>
+                <span className="text-sm text-white/60">Bridal Makeup & Hair</span>
+                <span className="text-sm text-white/60">Pre / Post Wedding</span>
+                <span className="text-sm text-white/60">Party Makeup & Hair</span>
+                <span className="text-sm text-white/60">Baby Shower / Birthday</span>
+                <span className="text-sm text-white/60">Makeup Classes</span>
+                <span className="text-sm text-white/60">Personal Grooming</span>
+                <span className="text-sm text-white/60">Destination Bridal</span>
               </div>
             </div>
 

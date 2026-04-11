@@ -11,20 +11,20 @@
   --color-gold-dark: #a68539;
   --color-gold-soft: rgba(200, 165, 90, 0.08);
   --color-gold-glow: rgba(200, 165, 90, 0.2);
-  --color-rose: #e8c4c4;
-  --color-rose-soft: #f5e6e6;
-  --color-cream: #faf7f2;
-  --color-cream-dark: #f0ebe3;
-  --color-dark: #1a1412;
-  --color-dark-soft: #2a2320;
-  --color-text: #2d2420;
-  --color-text-mid: #6b5e57;
-  --color-text-light: #9a8e88;
-  --color-off-white: #fdfbf7;
+  --color-rose: #f4b8b8;
+  --color-rose-soft: #fce4e0;
+  --color-cream: #fde8e0;
+  --color-cream-dark: #f5d6cc;
+  --color-dark: #2e2724;
+  --color-dark-soft: #3d3532;
+  --color-text: #2b2b2b;
+  --color-text-mid: #4a4a4a;
+  --color-text-light: #7a7a7a;
+  --color-off-white: #fff0ea;
 
-  --font-heading: 'DM Serif Display', 'Roxborough CF', Georgia, serif;
-  --font-body: 'Montserrat', 'Helvetica Neue', sans-serif;
-  --font-accent: 'Cormorant Garamond', Georgia, serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Raleway', 'Helvetica Neue', sans-serif;
+  --font-accent: 'Italiana', Georgia, serif;
 }
 
 /* --- Base --- */
