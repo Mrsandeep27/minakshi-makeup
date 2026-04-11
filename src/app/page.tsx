@@ -331,13 +331,13 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <BeforeAfterSlider
-                beforeImage="/images/portfolio/engagement-natural.jpg"
-                afterImage="/images/portfolio/engagement-glamour.jpg"
+                beforeImage="/images/portfolio/before-after-before.jpg"
+                afterImage="/images/portfolio/before-after-after.jpg"
                 beforeLabel="Before"
                 afterLabel="After Makeup"
                 className="h-[220px] md:h-[500px]"
               />
-              <p className="hidden md:block text-center text-sm text-[var(--color-text-mid)] mt-3 font-medium">Engagement Makeover — Drag to see the magic</p>
+              <p className="hidden md:block text-center text-sm text-[var(--color-text-mid)] mt-3 font-medium">Bridal Makeover — Drag to see the magic</p>
             </ScrollReveal>
           </div>
 

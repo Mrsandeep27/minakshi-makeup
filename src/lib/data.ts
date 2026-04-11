@@ -295,20 +295,6 @@ export const portfolio = [
     image: "/images/portfolio/babyshower-03.jpg",
     description: "Soft and radiant celebration look",
   },
-  {
-    id: 22,
-    title: "Before",
-    category: "before-after",
-    image: "/images/portfolio/before-after-before.jpg",
-    description: "Before the transformation",
-  },
-  {
-    id: 23,
-    title: "After",
-    category: "before-after",
-    image: "/images/portfolio/before-after-after.jpg",
-    description: "After — stunning bridal transformation",
-  },
 ];
 
 // Real Google Reviews — scraped from Google Maps (4.9 rating, 171+ reviews)
@@ -430,6 +416,5 @@ export const portfolioCategories = [
   { id: "engagement", label: "Engagement Looks" },
   { id: "pre-wedding", label: "Pre-Wedding Looks" },
   { id: "babyshower", label: "Baby Shower Looks" },
-  { id: "before-after", label: "Before-After Looks" },
   { id: "haldi", label: "Haldi Looks" },
 ];
