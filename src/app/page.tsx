@@ -99,6 +99,94 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== MAKEUP CLASSES — Certified Courses ===== */}
+      <section className="py-8 md:py-16 bg-[var(--color-cream)]">
+        <div className="max-w-6xl mx-auto px-5 md:px-6">
+          <ScrollReveal className="text-center mb-6 md:mb-10">
+            <span className="font-[var(--font-accent)] text-xs md:text-sm tracking-[0.2em] uppercase text-[var(--color-gold)]">Learn From The Best</span>
+            <h2 className="font-[var(--font-heading)] text-xl md:text-4xl font-bold text-[var(--color-text)] mt-2">
+              Become a <span className="text-gold-gradient italic">Certified Makeup Artist</span>
+            </h2>
+            <p className="text-[var(--color-text-mid)] text-xs md:text-base mt-2 md:mt-3 max-w-2xl mx-auto">
+              Hands-on training for Indian skin tones. All products provided. Small batches for personal attention. Certificate on completion.
+            </p>
+          </ScrollReveal>
+
+          {/* Course Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5">
+            {/* Self Makeup Pro */}
+            <ScrollReveal delay={0}>
+              <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-[var(--color-gold-soft)] text-[var(--color-gold-dark)] text-[9px] md:text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">1 Day</span>
+                  <span className="text-[var(--color-text-light)] text-[10px] md:text-xs">4 Hours</span>
+                </div>
+                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Self Makeup Pro</h3>
+                <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">Learn your face, master everyday & party looks. Perfect for beginners who want to do their own makeup like a pro.</p>
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Self Glam</span>
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Certificate</span>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Bridal Masterclass */}
+            <ScrollReveal delay={100}>
+              <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[var(--color-gold)] shadow-lg relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[var(--color-gold-dark)] to-[var(--color-gold)] text-white text-[8px] md:text-[9px] font-bold tracking-wider uppercase px-3 py-1 rounded-full">Most Popular</div>
+                <div className="flex items-center justify-between mb-3 mt-1">
+                  <span className="bg-[var(--color-gold-soft)] text-[var(--color-gold-dark)] text-[9px] md:text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">3 Days</span>
+                  <span className="text-[var(--color-text-light)] text-[10px] md:text-xs">10 Hours</span>
+                </div>
+                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Bridal Masterclass</h3>
+                <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">Full bridal, reception & engagement looks. Product knowledge, humidity-proof base techniques, and complete styling.</p>
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Bridal Looks</span>
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Product Guide</span>
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Certificate</span>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Professional Artist Course */}
+            <ScrollReveal delay={200}>
+              <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-[var(--color-gold-soft)] text-[var(--color-gold-dark)] text-[9px] md:text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">5 Days</span>
+                  <span className="text-[var(--color-text-light)] text-[10px] md:text-xs">Full Program</span>
+                </div>
+                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Professional Artist Course</h3>
+                <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">From beginner to paid artist. Client handling, pricing, hygiene + certificate + professional photoshoot included.</p>
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Business Basics</span>
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Photoshoot</span>
+                  <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Certified Artist</span>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* CTA */}
+          <ScrollReveal className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 md:mt-8">
+            <Link
+              href="/contact"
+              className="btn-shimmer flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-6 py-3 rounded-full font-semibold text-sm tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
+            >
+              Enroll Now &rarr; Get Certified
+            </Link>
+            <a
+              href={siteConfig.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[var(--color-text-mid)] hover:text-[var(--color-gold)] transition-colors text-sm"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.587-.823-6.327-2.2l-.441-.353-3.198 1.072 1.072-3.198-.353-.441A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z" /></svg>
+              WhatsApp to Book
+            </a>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* ===== FEATURED BRIDES GALLERY — full-width visual impact ===== */}
       <section className="py-3 md:py-16 bg-[var(--color-off-white)]">
         <div className="max-w-7xl mx-auto px-5 md:px-6">
