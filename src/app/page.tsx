@@ -108,7 +108,7 @@ export default function HomePage() {
               Become a <span className="text-gold-gradient italic">Certified Makeup Artist</span>
             </h2>
             <p className="text-[var(--color-text-mid)] text-xs md:text-base mt-2 md:mt-3 max-w-2xl mx-auto">
-              Hands-on training for Indian skin tones. All products provided. Small batches for personal attention. Certificate on completion.
+              Hands-on training for Indian skin tones. Small batches for personal attention. Certificate on completion.
             </p>
           </ScrollReveal>
 
@@ -117,10 +117,6 @@ export default function HomePage() {
             {/* Self Makeup Pro */}
             <ScrollReveal delay={0}>
               <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="bg-[var(--color-gold-soft)] text-[var(--color-gold-dark)] text-[9px] md:text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">1 Day</span>
-                  <span className="text-[var(--color-text-light)] text-[10px] md:text-xs">4 Hours</span>
-                </div>
                 <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Self Makeup Pro</h3>
                 <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">Learn your face, master everyday & party looks. Perfect for beginners who want to do their own makeup like a pro.</p>
                 <div className="flex flex-wrap gap-1.5 mt-3">
@@ -134,11 +130,7 @@ export default function HomePage() {
             <ScrollReveal delay={100}>
               <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[var(--color-gold)] shadow-lg relative">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[var(--color-gold-dark)] to-[var(--color-gold)] text-white text-[8px] md:text-[9px] font-bold tracking-wider uppercase px-3 py-1 rounded-full">Most Popular</div>
-                <div className="flex items-center justify-between mb-3 mt-1">
-                  <span className="bg-[var(--color-gold-soft)] text-[var(--color-gold-dark)] text-[9px] md:text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">3 Days</span>
-                  <span className="text-[var(--color-text-light)] text-[10px] md:text-xs">10 Hours</span>
-                </div>
-                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Bridal Masterclass</h3>
+                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)] mt-2">Bridal Masterclass</h3>
                 <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">Full bridal, reception & engagement looks. Product knowledge, humidity-proof base techniques, and complete styling.</p>
                 <div className="flex flex-wrap gap-1.5 mt-3">
                   <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Bridal Looks</span>
@@ -151,10 +143,6 @@ export default function HomePage() {
             {/* Professional Artist Course */}
             <ScrollReveal delay={200}>
               <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="bg-[var(--color-gold-soft)] text-[var(--color-gold-dark)] text-[9px] md:text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">5 Days</span>
-                  <span className="text-[var(--color-text-light)] text-[10px] md:text-xs">Full Program</span>
-                </div>
                 <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Professional Artist Course</h3>
                 <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">From beginner to paid artist. Client handling, pricing, hygiene + certificate + professional photoshoot included.</p>
                 <div className="flex flex-wrap gap-1.5 mt-3">
