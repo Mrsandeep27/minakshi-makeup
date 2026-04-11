@@ -295,6 +295,27 @@ export const portfolio = [
     image: "/images/portfolio/babyshower-03.jpg",
     description: "Soft and radiant celebration look",
   },
+  {
+    id: 50,
+    title: "Pre-Wedding Glow",
+    category: "pre-wedding",
+    image: "/images/portfolio/prewedding-01.jpg",
+    description: "Radiant pre-wedding look",
+  },
+  {
+    id: 51,
+    title: "Mehendi Ready",
+    category: "pre-wedding",
+    image: "/images/portfolio/prewedding-02.jpg",
+    description: "Beautiful pre-wedding makeover",
+  },
+  {
+    id: 52,
+    title: "Haldi Glam",
+    category: "pre-wedding",
+    image: "/images/portfolio/prewedding-03.jpg",
+    description: "Stunning pre-wedding celebration look",
+  },
 ];
 
 // Real Google Reviews — scraped from Google Maps (4.9 rating, 171+ reviews)
