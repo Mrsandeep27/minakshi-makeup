@@ -55,7 +55,7 @@ export default function ContactPage() {
             <div className="flex items-center justify-between bg-white rounded-xl p-3 border border-[var(--color-cream-dark)] text-xs">
               <div className="flex items-center gap-2 text-[var(--color-text-mid)]">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Mumbai (Vasai-Virar)
+                Mumbai
               </div>
               <div className="flex items-center gap-2 text-[var(--color-gold-dark)]">
                 <a href={siteConfig.instagram} target="_blank" rel="noopener noreferrer">@minakshimakeupandhair</a>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   <option value="party">Party Makeup & Hair</option>
                   <option value="baby-shower-birthday">Baby Shower / Birthday</option>
                   <option value="classes">Makeup Classes / Workshops</option>
-                  <option value="grooming">Personal Grooming</option>
+
                   <option value="destination">Destination Bridal Makeup</option>
                   <option value="other">Other</option>
                 </select>
@@ -160,7 +160,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-semibold text-sm text-[var(--color-text)]">Location</div>
-                      <div className="text-sm text-[var(--color-text-mid)]">Mumbai (Vasai-Virar), Maharashtra</div>
+                      <div className="text-sm text-[var(--color-text-mid)]">Mumbai, Maharashtra</div>
                       <div className="text-xs text-[var(--color-gold-dark)] mt-1">Available globally for destination weddings</div>
                     </div>
                   </div>
@@ -212,7 +212,7 @@ export default function ContactPage() {
                       <option value="party">Party Makeup & Hair</option>
                       <option value="baby-shower-birthday">Baby Shower / Birthday</option>
                       <option value="classes">Makeup Classes / Workshops</option>
-                      <option value="grooming">Personal Grooming</option>
+    
                       <option value="destination">Destination Bridal Makeup</option>
                       <option value="other">Other</option>
                     </select>

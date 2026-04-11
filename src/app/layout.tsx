@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     "Professional Bridal Makeup Artist in Mumbai with 8+ years of experience. Specializing in bridal, engagement, reception makeup across all cultures. 4.9★ rated. Book your trial session today!",
   keywords: [
     "bridal makeup artist Mumbai",
-    "makeup artist Vasai Virar",
+    "makeup artist Mumbai",
     "engagement makeup artist Mumbai",
     "best bridal makeup near me",
     "professional makeup artist Mumbai",
     "South Indian bridal makeup Mumbai",
     "Marathi bridal makeup",
     "Buddhist wedding makeup artist",
-    "wedding makeup Vasai Virar",
+    "wedding makeup Mumbai",
     "bridal hair styling Mumbai",
   ],
   openGraph: {

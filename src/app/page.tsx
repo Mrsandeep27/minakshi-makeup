@@ -236,7 +236,7 @@ export default function HomePage() {
                 Every Bride Becomes a <span className="text-gold-gradient italic">Masterpiece</span>
               </h2>
               <p className="text-[var(--color-text-mid)] text-xs mt-2 leading-relaxed line-clamp-4">
-                8+ years of experience, 500+ happy brides. Based in Mumbai (Vasai-Virar), available globally — expert in every culture&apos;s bridal artistry.
+                8+ years of experience, 500+ happy brides. Based in Mumbai, available globally — expert in every culture&apos;s bridal artistry.
               </p>
               <div className="flex flex-wrap gap-1.5 mt-3">
                 {["Multi-Cultural", "HD Makeup", "No-Lash Natural"].map((tag) => (
@@ -287,7 +287,7 @@ export default function HomePage() {
               </h2>
               <p className="text-[var(--color-text-mid)] mt-6 leading-relaxed">
                 With over 8 years of experience, I&apos;ve had the honour of making 500+ brides feel their most beautiful.
-                Based in Mumbai&apos;s Vasai-Virar area and available globally — I specialize in multi-cultural bridal artistry
+                Based in Mumbai and available globally — I specialize in multi-cultural bridal artistry
                 across Marathi, South Indian, Bengali, and Buddhist styles.
               </p>
               <p className="text-[var(--color-text-mid)] mt-4 leading-relaxed">

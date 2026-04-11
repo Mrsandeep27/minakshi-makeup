@@ -14,7 +14,7 @@ export const siteConfig = {
   youtube: "https://youtube.com/@minakshimakeupandhair",
   whatsappLink: "https://wa.me/919172235347?text=Hi%20Minakshi%2C%20I%27d%20love%20to%20know%20more%20about%20your%20bridal%20makeup%20services.%20Please%20share%20the%20details!",
   googleReviewsLink: "https://g.co/kgs/abc123",
-  location: "Mumbai (Vasai-Virar)",
+  location: "Mumbai",
   availability: "Available Globally",
   experience: 8,
   bridesCount: 500,
@@ -67,13 +67,6 @@ export const services = [
     description: "Learn professional makeup techniques from an expert. Perfect for beginners and aspiring artists — hands-on training with premium products.",
     tags: ["Hands-on Training", "Beginner Friendly", "Certificate"],
     image: "/images/services/hair-service.jpg",
-  },
-  {
-    id: "grooming",
-    title: "Personal Grooming Services",
-    description: "Complete grooming solutions — skincare, threading, waxing, facials, and more to keep you looking your best every day.",
-    tags: ["Skincare", "Facials", "Self-care"],
-    image: "/images/services/bengali-service.jpg",
   },
   {
     id: "destination",
@@ -549,7 +542,7 @@ export const marqueeItems = [
   "Baby Shower Glam",
   "Birthday Makeup",
   "Makeup Classes",
-  "Personal Grooming",
+
   "Destination Bridal",
   "HD Makeup",
   "Natural Makeup",

@@ -88,7 +88,6 @@ export default function Footer() {
                 <span className="text-sm text-white/60">Party Makeup & Hair</span>
                 <span className="text-sm text-white/60">Baby Shower / Birthday</span>
                 <span className="text-sm text-white/60">Makeup Classes</span>
-                <span className="text-sm text-white/60">Personal Grooming</span>
                 <span className="text-sm text-white/60">Destination Bridal</span>
               </div>
             </div>
@@ -111,7 +110,7 @@ export default function Footer() {
                 </a>
                 <div className="text-sm text-white/60 flex items-center gap-2 mt-2">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  Mumbai (Vasai-Virar) | Available Globally
+                  Mumbai | Available Globally
                 </div>
               </div>
             </div>
