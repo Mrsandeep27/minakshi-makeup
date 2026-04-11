@@ -328,14 +328,14 @@ export default function HomePage() {
             </p>
           </ScrollReveal>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <ScrollReveal>
               <BeforeAfterSlider
                 beforeImage="/images/portfolio/before-after-before.jpg"
                 afterImage="/images/portfolio/before-after-after.jpg"
                 beforeLabel="Before"
                 afterLabel="After Makeup"
-                className="h-[220px] md:h-[500px]"
+                className=""
               />
               <p className="hidden md:block text-center text-sm text-[var(--color-text-mid)] mt-3 font-medium">Bridal Makeover — Drag to see the magic</p>
             </ScrollReveal>

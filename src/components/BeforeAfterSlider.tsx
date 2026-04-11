@@ -67,9 +67,10 @@ export default function BeforeAfterSlider({
       onTouchStart={handleMouseDown}
     >
       {/* After image (full) */}
-      <img loading="lazy" decoding="async"         src={afterImage}
+      <img loading="lazy" decoding="async"
+        src={afterImage}
         alt={afterLabel}
-        className="w-full h-full object-cover"
+        className="w-full block"
         draggable={false}
       />
 
@@ -78,9 +79,10 @@ export default function BeforeAfterSlider({
         className="absolute inset-0"
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
       >
-        <img loading="lazy" decoding="async"           src={beforeImage}
+        <img loading="lazy" decoding="async"
+          src={beforeImage}
           alt={beforeLabel}
-          className="w-full h-full object-cover"
+          className="w-full block"
           draggable={false}
         />
       </div>
