@@ -116,7 +116,7 @@ export default function HeroSection() {
             href="/contact"
             className="btn-shimmer flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
           >
-            <span>Book Your Bridal Trial</span>
+            <span>Book Your Special Day</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>
           <Link
