@@ -451,7 +451,7 @@ export default function HomePage() {
               Make Your Special Day<br /><span className="text-gold-gradient italic">Unforgettable</span>
             </h2>
             <p className="text-white/60 mt-3 md:mt-4 max-w-xl mx-auto text-sm md:text-base">
-              Limited dates available for the 2025-2026 season. Book your trial session today.
+              Limited dates available. Book your trial session today.
             </p>
             <div className="flex flex-row items-center justify-center gap-3 mt-5 md:mt-8">
               <Link

@@ -20,7 +20,7 @@ export const siteConfig = {
   bridesCount: 500,
   rating: 4.9,
   reviewCount: 168,
-  bookingStatus: "Now booking for 2025-2026",
+  bookingStatus: "Now Booking",
 };
 
 export const stats = [

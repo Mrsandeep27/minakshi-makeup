@@ -66,7 +66,7 @@ export default function HeroSection() {
           </div>
           <div>
             <div className="text-white font-bold text-sm">Booking Open</div>
-            <div className="text-white/50 text-xs">Season 2025-2026</div>
+            <div className="text-white/50 text-xs">Limited Dates Available</div>
           </div>
         </div>
       </div>
