@@ -42,7 +42,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="border-t border-white/10 pt-3">
             <p className="text-[10px] text-white/40">
-              &copy; {new Date().getFullYear()} Minakshi Makeup & Hair. All rights reserved.
+              &copy; Minakshi Makeup & Hair. All rights reserved.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function Footer() {
           {/* Bottom */}
           <div className="border-t border-white/10 mt-12 pt-8 flex flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40">
-              &copy; {new Date().getFullYear()} Minakshi Makeup & Hair. All rights reserved.
+              &copy; Minakshi Makeup & Hair. All rights reserved.
             </p>
             <p className="text-xs text-white/40">
               Crafted with love for beautiful brides
