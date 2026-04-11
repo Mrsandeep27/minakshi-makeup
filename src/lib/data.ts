@@ -59,7 +59,7 @@ export const services = [
     title: "Baby Shower / Birthday Makeup & Hair",
     description: "Soft, glowing makeup for your special celebration. Gentle products with a radiant, picture-perfect finish.",
     tags: ["Soft Glam", "Gentle Products", "Natural Glow"],
-    image: "/images/services/baby-shower-service.webp",
+    image: "/images/portfolio/babyshower-02.webp",
   },
   {
     id: "classes",

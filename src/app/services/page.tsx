@@ -31,7 +31,7 @@ export default function ServicesPage() {
               <ScrollReveal key={service.id} delay={i * 80}>
                 <div className="group bg-white rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
                   {/* Image */}
-                  <div className="relative w-full h-32 md:h-56 overflow-hidden">
+                  <div className="relative w-full h-44 md:h-56 overflow-hidden">
                     <img loading="lazy" decoding="async"
                       src={service.image}
                       alt={service.title}
