@@ -275,6 +275,27 @@ export const portfolio = [
     description: "Beautiful celebration makeover",
   },
   {
+    id: 40,
+    title: "Baby Shower Glow",
+    category: "babyshower",
+    image: "/images/portfolio/babyshower-01.jpg",
+    description: "Radiant baby shower look",
+  },
+  {
+    id: 41,
+    title: "Mom-to-be Glam",
+    category: "babyshower",
+    image: "/images/portfolio/babyshower-02.jpg",
+    description: "Glowing mom-to-be makeover",
+  },
+  {
+    id: 42,
+    title: "Celebration Glow",
+    category: "babyshower",
+    image: "/images/portfolio/babyshower-03.jpg",
+    description: "Soft and radiant celebration look",
+  },
+  {
     id: 22,
     title: "Before",
     category: "before-after",
@@ -408,6 +429,7 @@ export const portfolioCategories = [
   { id: "party", label: "Party Looks" },
   { id: "engagement", label: "Engagement Looks" },
   { id: "pre-wedding", label: "Pre-Wedding Looks" },
+  { id: "babyshower", label: "Baby Shower Looks" },
   { id: "before-after", label: "Before-After Looks" },
   { id: "haldi", label: "Haldi Looks" },
 ];
