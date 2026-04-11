@@ -20,14 +20,14 @@ const BeforeAfterSlider = dynamic(() => import("@/components/BeforeAfterSlider")
 });
 
 const instaPosts = [
-  { image: "/images/portfolio/marathi-bride.jpg", caption: "Marathi bride" },
-  { image: "/images/portfolio/engagement-glamour.jpg", caption: "Engagement makeover" },
-  { image: "/images/portfolio/south-indian.jpg", caption: "South Indian bridal" },
-  { image: "/images/portfolio/reception-glam.jpg", caption: "Reception glam" },
-  { image: "/images/portfolio/cinematic-wedding.jpg", caption: "Cinematic wedding" },
-  { image: "/images/portfolio/soft-pink-bride.jpg", caption: "Soft pink bride" },
-  { image: "/images/portfolio/flower-art.jpg", caption: "Flower art styling" },
-  { image: "/images/portfolio/wedding-look.jpg", caption: "Wedding look" },
+  { image: "/images/portfolio/marathi-bride.webp", caption: "Marathi bride" },
+  { image: "/images/portfolio/engagement-glamour.webp", caption: "Engagement makeover" },
+  { image: "/images/portfolio/south-indian.webp", caption: "South Indian bridal" },
+  { image: "/images/portfolio/reception-glam.webp", caption: "Reception glam" },
+  { image: "/images/portfolio/cinematic-wedding.webp", caption: "Cinematic wedding" },
+  { image: "/images/portfolio/soft-pink-bride.webp", caption: "Soft pink bride" },
+  { image: "/images/portfolio/flower-art.webp", caption: "Flower art styling" },
+  { image: "/images/portfolio/wedding-look.webp", caption: "Wedding look" },
 ];
 
 export default function HomePage() {
@@ -117,7 +117,7 @@ export default function HomePage() {
             {/* Tall left */}
             <ScrollReveal delay={0} className="col-span-1 row-span-2">
               <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/glamorous-engagement.jpg" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/glamorous-engagement.webp" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
                   <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
@@ -129,7 +129,7 @@ export default function HomePage() {
             {/* Top row middle */}
             <ScrollReveal delay={80}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/marathi-bride.jpg" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/marathi-bride.webp" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Marathi Dulhan</span>
@@ -139,7 +139,7 @@ export default function HomePage() {
 
             <ScrollReveal delay={120}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/soft-pink-bride.jpg" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/soft-pink-bride.webp" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Soft Pink Bride</span>
@@ -150,7 +150,7 @@ export default function HomePage() {
             {/* Tall right */}
             <ScrollReveal delay={160} className="col-span-1 row-span-2">
               <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/glowing-wedding.jpg" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/glowing-wedding.webp" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
                   <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
@@ -162,7 +162,7 @@ export default function HomePage() {
             {/* Bottom row middle */}
             <ScrollReveal delay={200}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/reception-makeover.jpg" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/reception-makeover.webp" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Reception Makeover</span>
@@ -172,7 +172,7 @@ export default function HomePage() {
 
             <ScrollReveal delay={240}>
               <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/hd-siders-look.jpg" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/hd-siders-look.webp" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">HD Siders Look</span>
@@ -197,18 +197,18 @@ export default function HomePage() {
       <div className="overflow-hidden">
         <div className="flex image-strip-scroll">
           {[
-            "/images/portfolio/engagement-bride-1.jpg",
-            "/images/portfolio/minimal-wedding.jpg",
-            "/images/portfolio/glamorous-engagement-3.jpg",
-            "/images/portfolio/wedding-classic.jpg",
-            "/images/portfolio/engagement-bride-2.jpg",
-            "/images/portfolio/reception-look.jpg",
-            "/images/portfolio/glowing-wedding-2.jpg",
-            "/images/portfolio/glamorous-engagement-2.jpg",
-            "/images/portfolio/engagement-bride-1.jpg",
-            "/images/portfolio/minimal-wedding.jpg",
-            "/images/portfolio/glamorous-engagement-3.jpg",
-            "/images/portfolio/wedding-classic.jpg",
+            "/images/portfolio/engagement-bride-1.webp",
+            "/images/portfolio/minimal-wedding.webp",
+            "/images/portfolio/glamorous-engagement-3.webp",
+            "/images/portfolio/wedding-classic.webp",
+            "/images/portfolio/engagement-bride-2.webp",
+            "/images/portfolio/reception-look.webp",
+            "/images/portfolio/glowing-wedding-2.webp",
+            "/images/portfolio/glamorous-engagement-2.webp",
+            "/images/portfolio/engagement-bride-1.webp",
+            "/images/portfolio/minimal-wedding.webp",
+            "/images/portfolio/glamorous-engagement-3.webp",
+            "/images/portfolio/wedding-classic.webp",
           ].map((src, i) => (
             <div key={i} className="flex-shrink-0 w-[150px] h-[190px] md:w-[280px] md:h-[350px]">
               <img loading="lazy" decoding="async" src={src} alt="" className="w-full h-full object-cover" />
@@ -224,7 +224,7 @@ export default function HomePage() {
           <div className="flex gap-4 md:hidden items-start">
             <div className="flex-shrink-0 w-[120px]">
               <div className="relative rounded-xl overflow-hidden gold-frame-glow">
-                <img loading="lazy" decoding="async"                   src="/images/about-main.jpg"
+                <img loading="lazy" decoding="async"                   src="/images/about-main.webp"
                   alt="Minakshi at work"
                   className="w-full h-[160px] object-cover" style={{objectPosition: 'center 30%'}}
                 />
@@ -260,7 +260,7 @@ export default function HomePage() {
             <ScrollReveal variant="left">
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden gold-frame-glow">
-                  <img loading="lazy" decoding="async"                     src="/images/about-main.jpg"
+                  <img loading="lazy" decoding="async"                     src="/images/about-main.webp"
                     alt="Minakshi at work"
                     className="w-full h-[520px] object-cover" style={{objectPosition: 'center 30%'}}
                   />
@@ -272,7 +272,7 @@ export default function HomePage() {
                     <div className="text-xs text-white/60">Bridal Artistry</div>
                   </div>
                 </div>
-                <img loading="lazy" decoding="async"                   src="/images/about-detail.jpg"
+                <img loading="lazy" decoding="async"                   src="/images/about-detail.webp"
                   alt="Makeup detail"
                   className="absolute -top-6 -left-6 w-36 h-44 object-cover rounded-2xl shadow-xl border-4 border-white hover:scale-105 transition-transform duration-300"
                 />
@@ -331,8 +331,8 @@ export default function HomePage() {
           <div className="max-w-2xl mx-auto">
             <ScrollReveal>
               <BeforeAfterSlider
-                beforeImage="/images/portfolio/before-after-before.jpg"
-                afterImage="/images/portfolio/before-after-after.jpg"
+                beforeImage="/images/portfolio/before-after-before.webp"
+                afterImage="/images/portfolio/before-after-after.webp"
                 beforeLabel="Before"
                 afterLabel="After Makeup"
                 className=""
@@ -435,7 +435,7 @@ export default function HomePage() {
       {/* Parallax Booking Banner */}
       <section className="relative h-[240px] md:h-[400px] overflow-hidden">
         <div className="absolute inset-0 parallax-bg">
-          <img loading="lazy" decoding="async"             src="/images/portfolio/cinematic-wedding.jpg"
+          <img loading="lazy" decoding="async"             src="/images/portfolio/cinematic-wedding.webp"
             alt="Bridal beauty"
             className="w-full h-[120%] object-cover"
           />

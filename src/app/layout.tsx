@@ -74,6 +74,24 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <MobileStickyBar />
+        <script dangerouslySetInnerHTML={{__html: `
+          document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
+              if (img.complete) img.classList.add('loaded');
+              else img.addEventListener('load', function() { this.classList.add('loaded'); });
+            });
+            new MutationObserver(function(mutations) {
+              mutations.forEach(function(m) {
+                m.addedNodes.forEach(function(n) {
+                  if (n.querySelectorAll) n.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
+                    if (img.complete) img.classList.add('loaded');
+                    else img.addEventListener('load', function() { this.classList.add('loaded'); });
+                  });
+                });
+              });
+            }).observe(document.body, { childList: true, subtree: true });
+          });
+        `}} />
       </body>
     </html>
   );

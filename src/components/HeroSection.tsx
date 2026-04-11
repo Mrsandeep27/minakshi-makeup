@@ -30,7 +30,7 @@ export default function HeroSection() {
       {/* Background with Ken Burns */}
       <div className="absolute inset-0 hero-ken-burns">
         <img
-          src="/images/hero-bg.jpg"
+          src="/images/hero-bg.webp"
           alt="Bridal beauty"
           className="w-full h-full object-cover"
         />
