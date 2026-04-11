@@ -225,6 +225,20 @@ export const portfolio = [
     image: "/images/portfolio/bridal-21.jpg",
     description: "Forever beautiful — a stunning bride",
   },
+  {
+    id: 22,
+    title: "Before",
+    category: "before-after",
+    image: "/images/portfolio/before-after-before.jpg",
+    description: "Before the transformation",
+  },
+  {
+    id: 23,
+    title: "After",
+    category: "before-after",
+    image: "/images/portfolio/before-after-after.jpg",
+    description: "After — stunning bridal transformation",
+  },
 ];
 
 // Real Google Reviews — scraped from Google Maps (4.9 rating, 171+ reviews)
