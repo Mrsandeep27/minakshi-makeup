@@ -26,7 +26,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <header className="relative min-h-screen flex items-end justify-center pb-16 md:pb-20 overflow-hidden">
       {/* Background with Ken Burns */}
       <div className="absolute inset-0 hero-ken-burns">
         <img
