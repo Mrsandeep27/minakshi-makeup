@@ -188,23 +188,40 @@ export default function HomePage() {
             </p>
           </ScrollReveal>
 
-          {/* Bento Grid — visual variety */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-            {/* Tall left */}
+          {/* Scrollable image strip on mobile, bento grid on desktop */}
+          <div className="flex md:hidden gap-3 overflow-x-auto pb-3" style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}>
+            {[
+              { src: "/images/portfolio/glamorous-engagement.webp", title: "Glamorous Engagement" },
+              { src: "/images/portfolio/marathi-bride.webp", title: "Marathi Dulhan" },
+              { src: "/images/portfolio/soft-pink-bride.webp", title: "Soft Pink Bride" },
+              { src: "/images/portfolio/glowing-wedding.webp", title: "Pyaar Se Chamakti Dulhan" },
+              { src: "/images/portfolio/reception-makeover.webp", title: "Reception Makeover" },
+              { src: "/images/portfolio/hd-siders-look.webp", title: "HD Siders Look" },
+            ].map((item, i) => (
+              <div key={i} className="flex-shrink-0 w-[200px] group relative h-[280px] rounded-xl overflow-hidden">
+                <img loading="lazy" decoding="async" src={item.src} alt={item.title} className="w-full h-full object-cover" style={{objectPosition: 'center 30%'}} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-2 left-2 right-2">
+                  <span className="text-white text-xs font-semibold">{item.title}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop bento grid */}
+          <div className="hidden md:grid grid-cols-4 gap-4">
             <ScrollReveal delay={0} className="col-span-1 row-span-2">
-              <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
+              <div className="group relative h-full min-h-[520px] rounded-2xl overflow-hidden">
                 <img loading="lazy" decoding="async" src="/images/portfolio/glamorous-engagement.webp" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
-                  <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
-                  <h3 className="font-[var(--font-heading)] text-white text-xs md:text-lg font-semibold mt-1 md:mt-2">Glamorous Engagement Look</h3>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="px-3 py-1 bg-[var(--color-gold)]/80 text-white text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
+                  <h3 className="font-[var(--font-heading)] text-white text-lg font-semibold mt-2">Glamorous Engagement Look</h3>
                 </div>
               </div>
             </ScrollReveal>
-
-            {/* Top row middle */}
             <ScrollReveal delay={80}>
-              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
+              <div className="group relative h-[250px] rounded-2xl overflow-hidden">
                 <img loading="lazy" decoding="async" src="/images/portfolio/marathi-bride.webp" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -212,9 +229,8 @@ export default function HomePage() {
                 </div>
               </div>
             </ScrollReveal>
-
             <ScrollReveal delay={120}>
-              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
+              <div className="group relative h-[250px] rounded-2xl overflow-hidden">
                 <img loading="lazy" decoding="async" src="/images/portfolio/soft-pink-bride.webp" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -222,22 +238,18 @@ export default function HomePage() {
                 </div>
               </div>
             </ScrollReveal>
-
-            {/* Tall right */}
             <ScrollReveal delay={160} className="col-span-1 row-span-2">
-              <div className="group relative h-full min-h-[200px] md:min-h-[520px] rounded-xl md:rounded-2xl overflow-hidden">
+              <div className="group relative h-full min-h-[520px] rounded-2xl overflow-hidden">
                 <img loading="lazy" decoding="async" src="/images/portfolio/glowing-wedding.webp" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <div className="absolute bottom-2 left-2 right-2 md:bottom-4 md:left-4 md:right-4">
-                  <span className="px-2 py-0.5 md:px-3 md:py-1 bg-[var(--color-gold)]/80 text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
-                  <h3 className="font-[var(--font-heading)] text-white text-xs md:text-lg font-semibold mt-1 md:mt-2">Pyaar Se Chamakti Dulhan</h3>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="px-3 py-1 bg-[var(--color-gold)]/80 text-white text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
+                  <h3 className="font-[var(--font-heading)] text-white text-lg font-semibold mt-2">Pyaar Se Chamakti Dulhan</h3>
                 </div>
               </div>
             </ScrollReveal>
-
-            {/* Bottom row middle */}
             <ScrollReveal delay={200}>
-              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
+              <div className="group relative h-[250px] rounded-2xl overflow-hidden">
                 <img loading="lazy" decoding="async" src="/images/portfolio/reception-makeover.webp" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -245,9 +257,8 @@ export default function HomePage() {
                 </div>
               </div>
             </ScrollReveal>
-
             <ScrollReveal delay={240}>
-              <div className="group relative h-[95px] md:h-[250px] rounded-xl md:rounded-2xl overflow-hidden">
+              <div className="group relative h-[250px] rounded-2xl overflow-hidden">
                 <img loading="lazy" decoding="async" src="/images/portfolio/hd-siders-look.webp" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
