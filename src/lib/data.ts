@@ -303,13 +303,6 @@ export const portfolio = [
     description: "Radiant pre-wedding look",
   },
   {
-    id: 51,
-    title: "Mehendi Ready",
-    category: "pre-wedding",
-    image: "/images/portfolio/prewedding-02.jpg",
-    description: "Beautiful pre-wedding makeover",
-  },
-  {
     id: 52,
     title: "Haldi Glam",
     category: "pre-wedding",
