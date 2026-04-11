@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Cormorant_Garamond } from "next/font/google";
+import { DM_Serif_Display, Montserrat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,19 +9,22 @@ import Preloader from "@/components/Preloader";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 
-const playfair = Playfair_Display({
+// Heading font: DM Serif Display — closest free Google Font to client's Roxborough CF
+const dmSerif = DM_Serif_Display({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
   style: ["normal", "italic"],
 });
 
-const inter = Inter({
+// Body font: Montserrat — matches client's brand exactly
+const montserrat = Montserrat({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
+// Accent font: Cormorant Garamond — for italic flourishes
 const cormorant = Cormorant_Garamond({
   variable: "--font-accent",
   subsets: ["latin"],
@@ -61,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
+      className={`${dmSerif.variable} ${montserrat.variable} ${cormorant.variable}`}
     >
       <body className="min-h-screen bg-[var(--color-off-white)] text-[var(--color-text)] antialiased">
         <Preloader />
