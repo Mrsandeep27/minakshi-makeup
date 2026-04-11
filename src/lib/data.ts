@@ -19,7 +19,7 @@ export const siteConfig = {
   experience: 8,
   bridesCount: 500,
   rating: 4.9,
-  reviewCount: 168,
+  reviewCount: 171,
   bookingStatus: "Now Booking",
 };
 
@@ -451,42 +451,63 @@ export const portfolio = [
   },
 ];
 
-// Reviews stay in Hinglish — testimonials feel more authentic when raw and personal
+// Real Google Reviews — scraped from Google Maps (4.9 rating, 171+ reviews)
 export const reviews = [
   {
-    name: "Pritam Bhosale",
-    text: "Minakshi ne meri shaadi pe kamaal ka kaam kiya! Poore din makeup tikha raha, ek bhi touch-up nahi laga. Exactly wahi look diya jo main chahti thi. Highly recommend her to every bride!",
+    name: "Shubhangi Gawas",
+    text: "Absolutely in love with my bridal makeup! She understood my requirements perfectly and delivered exactly what I had envisioned. The makeup was flawless, elegant, and long-lasting. I felt confident, radiant, and truly like the best version of myself on my big day.",
     rating: 5,
     event: "Bridal Makeup",
     image: "/images/reviews/review-1.jpg",
   },
   {
     name: "Khushboo Chaurasia",
-    text: "Best makeup artist in Mumbai! Minakshi has magic in her hands. She gave me a dreamy look for my engagement. The no-lash look was exactly what I wanted — natural yet glamorous. Bohot shukriya!",
+    text: "I couldn't have asked for a better makeup artist for my special day. She understood exactly what I wanted and enhanced my features so beautifully while keeping the look elegant and natural. The makeup stayed flawless throughout the entire event, despite all the rituals, photos, and emotions.",
     rating: 5,
-    event: "Engagement Makeup",
+    event: "Bridal Makeup",
     image: "/images/reviews/review-2.jpg",
   },
   {
     name: "Rupa Borkar",
-    text: "I was so nervous about my wedding makeup but Minakshi made me completely relax. She did a trial session first and on the wedding day my look was absolutely perfect. Meri family roo padi mujhe dekh ke — best compliment ever!",
+    text: "Had the most amazing experience with Minakshi for my event! She's so talented, patient, and made me feel incredibly comfortable. The makeup was natural yet glam, photographed beautifully, and stayed put all day. She truly brought my vision to life!",
     rating: 5,
-    event: "Bridal Makeup",
+    event: "Engagement Makeup",
     image: "/images/reviews/review-3.jpg",
   },
   {
-    name: "Dr. Surve",
-    text: "Minakshi did my engagement look without lashes and without lenses — just pure natural beauty. Everyone thought I had professional editing done but it was all her skill! Worth every penny.",
+    name: "Aparna Panigrahy",
+    text: "Absolutely loved her work! She created the exact engagement look I had envisioned — and honestly, even better than I imagined. Her attention to detail is amazing. On top of that, she is so kind, polite, and makes you feel completely comfortable. Highly recommend!",
     rating: 5,
     event: "Engagement Makeup",
     image: "/images/reviews/review-4.jpg",
   },
   {
-    name: "Pooja Hule",
-    text: "Minakshi handled my complete wedding look along with the Shutter Snap Photography team. The coordination was flawless — makeup, hair, photos, video — everything came together beautifully. Dream team hai ye!",
+    name: "Poornima Nalavade",
+    text: "Thank you so much for the amazing makeup! I loved how you kept it so natural yet radiant. It lasted all day/night, and my first/second look turned out beautifully. I received so many compliments. You are truly very talented!",
     rating: 5,
-    event: "Wedding Package",
+    event: "Party Makeup",
     image: "/images/reviews/review-5.jpg",
+  },
+  {
+    name: "Purnima Singh",
+    text: "Just wanted to say a huge thank you for the amazing look you gave me — you totally nailed it! Felt so beautiful and confident, and everyone kept complimenting my look. Really appreciate your talent, professionalism, and the extra effort of making me calm.",
+    rating: 4,
+    event: "Bridal Makeup",
+    image: "/images/reviews/review-1.jpg",
+  },
+  {
+    name: "Namrata Purabia",
+    text: "I found you on the map, and you turned out to be the best find ever. Thank you for making me look so beautiful on my special day. Who knew a map search would lead me to such an amazing makeup artist? Thank you for the perfect look Minakshi Di!",
+    rating: 5,
+    event: "Bridal Makeup",
+    image: "/images/reviews/review-2.jpg",
+  },
+  {
+    name: "Simantini Deochake",
+    text: "Minakshi is a fabulous makeup artist. She is patient and innovative in giving you the perfect look. She transformed me with her magic at my son's Thread ceremony function. Thank you Minakshi!",
+    rating: 5,
+    event: "Party Makeup",
+    image: "/images/reviews/review-3.jpg",
   },
 ];
 
