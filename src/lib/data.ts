@@ -448,7 +448,7 @@ export const portfolioCategories = [
   { id: "all", label: "All" },
   { id: "bridal", label: "Bridal" },
   { id: "party", label: "Party" },
-  { id: "engagement", label: "Engagement" },
+
   { id: "pre-wedding", label: "Pre-Wedding" },
   { id: "babyshower", label: "Baby Shower" },
   { id: "haldi", label: "Haldi" },

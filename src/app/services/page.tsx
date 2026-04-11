@@ -32,10 +32,11 @@ export default function ServicesPage() {
                 <div className="group bg-white rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
                   {/* Image */}
                   <div className="relative w-full h-32 md:h-56 overflow-hidden">
-                    <img loading="lazy" decoding="async"                       src={service.image}
+                    <img loading="lazy" decoding="async"
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      style={{objectPosition: 'center 30%'}}
+                      style={{objectPosition: 'center center'}}
                     />
                     {service.popular && (
                       <span className="absolute top-2 left-2 md:top-3 md:left-3 bg-[var(--color-gold)] text-white text-[8px] md:text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 md:px-3 md:py-1 rounded-full">
