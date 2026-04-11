@@ -7,7 +7,6 @@ interface Review {
   text: string;
   rating: number;
   event: string;
-  image: string;
 }
 
 interface TestimonialCarouselProps {
@@ -76,10 +75,9 @@ export default function TestimonialCarousel({ reviews }: TestimonialCarouselProp
 
             {/* Author */}
             <div className="flex items-center gap-3 mt-3 md:mt-5 pt-3 md:pt-4 border-t border-[var(--color-cream-dark)]">
-              <img loading="lazy" decoding="async"                 src={review.image}
-                alt={review.name}
-                className="w-11 h-11 rounded-full object-cover ring-2 ring-[var(--color-gold-glow)]"
-              />
+              <div className="w-11 h-11 rounded-full bg-[var(--color-gold)] flex items-center justify-center ring-2 ring-[var(--color-gold-glow)] text-white font-semibold text-sm">
+                {review.name.split(" ").map(n => n[0]).join("").slice(0, 2)}
+              </div>
               <div>
                 <div className="font-semibold text-sm text-[var(--color-text)]">{review.name}</div>
                 <div className="text-xs text-[var(--color-text-light)] flex items-center gap-1">
