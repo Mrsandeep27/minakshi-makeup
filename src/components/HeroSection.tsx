@@ -110,44 +110,46 @@ export default function HeroSection() {
           stays flawless all day, and makes your special day truly unforgettable.
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 md:mt-10 animate-[fadeInUp_0.8s_ease_0.7s_forwards] opacity-0">
-          <Link
-            href="/contact"
-            className="btn-shimmer flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
-          >
-            <span>Book Your Special Day</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-          </Link>
-          <Link
-            href="/portfolio"
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:bg-white/20 hover:border-white/50 transition-all duration-300"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg>
-            View My Work
-          </Link>
-        </div>
+        {/* CTAs + Stats side by side */}
+        <div className="flex flex-col items-center mt-6 md:mt-10 animate-[fadeInUp_0.8s_ease_0.7s_forwards] opacity-0">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href="/contact"
+              className="btn-shimmer flex items-center gap-2 bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:shadow-[0_8px_40px_rgba(200,165,90,0.5)] transition-all duration-300 hover:scale-105"
+            >
+              <span>Book Your Special Day</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </Link>
+            <Link
+              href="/portfolio"
+              className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-sm md:text-base tracking-wide hover:bg-white/20 hover:border-white/50 transition-all duration-300"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg>
+              View My Work
+            </Link>
+          </div>
 
-        {/* Quick stats row */}
-        <div className="flex items-center justify-center gap-4 sm:gap-8 md:gap-12 mt-8 md:mt-12 animate-[fadeInUp_0.8s_ease_0.9s_forwards] opacity-0">
-          <div className="text-center">
-            <div className="text-white font-[var(--font-heading)] text-lg sm:text-2xl font-bold">{siteConfig.experience}+</div>
-            <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-wider">Years</div>
-          </div>
-          <div className="w-px h-8 bg-white/20" />
-          <div className="text-center">
-            <div className="text-white font-[var(--font-heading)] text-lg sm:text-2xl font-bold">{siteConfig.bridesCount}+</div>
-            <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-wider">Brides</div>
-          </div>
-          <div className="w-px h-8 bg-white/20" />
-          <div className="text-center">
-            <div className="text-white font-[var(--font-heading)] text-lg sm:text-2xl font-bold">{siteConfig.rating}</div>
-            <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-wider">Rating</div>
-          </div>
-          <div className="w-px h-8 bg-white/20" />
-          <div className="text-center">
-            <div className="text-white font-[var(--font-heading)] text-lg sm:text-2xl font-bold">50+</div>
-            <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-wider">Destinations</div>
+          {/* Quick stats inline below CTAs */}
+          <div className="flex items-center justify-center gap-3 sm:gap-6 md:gap-12 mt-5 md:mt-8 bg-white/5 backdrop-blur-sm rounded-full px-5 py-2.5 md:px-8 md:py-3 border border-white/10">
+            <div className="text-center">
+              <div className="text-white font-[var(--font-heading)] text-sm sm:text-xl font-bold">{siteConfig.experience}+</div>
+              <div className="text-white/40 text-[8px] sm:text-[10px] uppercase tracking-wider">Years</div>
+            </div>
+            <div className="w-px h-6 bg-white/20" />
+            <div className="text-center">
+              <div className="text-white font-[var(--font-heading)] text-sm sm:text-xl font-bold">{siteConfig.bridesCount}+</div>
+              <div className="text-white/40 text-[8px] sm:text-[10px] uppercase tracking-wider">Brides</div>
+            </div>
+            <div className="w-px h-6 bg-white/20" />
+            <div className="text-center">
+              <div className="text-white font-[var(--font-heading)] text-sm sm:text-xl font-bold">{siteConfig.rating}</div>
+              <div className="text-white/40 text-[8px] sm:text-[10px] uppercase tracking-wider">Rating</div>
+            </div>
+            <div className="w-px h-6 bg-white/20" />
+            <div className="text-center">
+              <div className="text-white font-[var(--font-heading)] text-sm sm:text-xl font-bold">50+</div>
+              <div className="text-white/40 text-[8px] sm:text-[10px] uppercase tracking-wider">Destinations</div>
+            </div>
           </div>
         </div>
       </div>
