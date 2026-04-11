@@ -316,6 +316,27 @@ export const portfolio = [
     image: "/images/portfolio/prewedding-03.jpg",
     description: "Stunning pre-wedding celebration look",
   },
+  {
+    id: 60,
+    title: "Haldi Glow",
+    category: "haldi",
+    image: "/images/portfolio/haldi-01.jpg",
+    description: "Radiant haldi ceremony look",
+  },
+  {
+    id: 61,
+    title: "Haldi Beauty",
+    category: "haldi",
+    image: "/images/portfolio/haldi-02.jpg",
+    description: "Beautiful haldi celebration makeover",
+  },
+  {
+    id: 62,
+    title: "Haldi Queen",
+    category: "haldi",
+    image: "/images/portfolio/haldi-03.jpg",
+    description: "Festive and vibrant haldi look",
+  },
 ];
 
 // Real Google Reviews — scraped from Google Maps (4.9 rating, 171+ reviews)
