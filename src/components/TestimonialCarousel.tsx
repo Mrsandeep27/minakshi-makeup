@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
-
 interface Review {
   name: string;
   text: string;
@@ -14,60 +12,15 @@ interface TestimonialCarouselProps {
 }
 
 export default function TestimonialCarousel({ reviews }: TestimonialCarouselProps) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [isUserScrolling, setIsUserScrolling] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  // Auto-scroll that respects user interaction
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-
-    let animationId: number;
-    const speed = 0.5;
-
-    const autoScroll = () => {
-      if (!isUserScrolling && el) {
-        el.scrollLeft += speed;
-        // Loop back when reaching halfway (doubled content)
-        if (el.scrollLeft >= el.scrollWidth / 2) {
-          el.scrollLeft = 0;
-        }
-      }
-      animationId = requestAnimationFrame(autoScroll);
-    };
-
-    animationId = requestAnimationFrame(autoScroll);
-    return () => cancelAnimationFrame(animationId);
-  }, [isUserScrolling]);
-
-  const handleInteractionStart = useCallback(() => {
-    setIsUserScrolling(true);
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-  }, []);
-
-  const handleInteractionEnd = useCallback(() => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => setIsUserScrolling(false), 3000);
-  }, []);
-
-  // Double reviews for seamless loop
-  const doubled = [...reviews, ...reviews];
-
   return (
     <div
-      ref={scrollRef}
-      className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide pb-2"
+      className="flex gap-4 md:gap-6 overflow-x-auto pb-3 snap-x snap-mandatory"
       style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}
-      onMouseEnter={handleInteractionStart}
-      onMouseLeave={handleInteractionEnd}
-      onTouchStart={handleInteractionStart}
-      onTouchEnd={handleInteractionEnd}
     >
-      {doubled.map((review, i) => (
+      {reviews.map((review, i) => (
         <div
           key={i}
-          className="flex-shrink-0 w-[260px] sm:w-[350px] md:w-[380px] bg-white rounded-2xl p-4 md:p-7 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300 group"
+          className="flex-shrink-0 w-[260px] sm:w-[350px] md:w-[380px] bg-white rounded-2xl p-4 md:p-7 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300 snap-start"
         >
           {/* Quote mark */}
           <div className="text-[var(--color-gold)] opacity-20 font-[var(--font-heading)] text-6xl leading-none -mt-2 -mb-4">&ldquo;</div>
