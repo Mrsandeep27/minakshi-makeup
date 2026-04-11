@@ -150,12 +150,12 @@ export default function MasonryGallery({ items, categories }: MasonryGalleryProp
   return (
     <>
       {/* Filters */}
-      <div className="flex items-center justify-center gap-1.5 md:gap-3 flex-wrap mb-4 md:mb-6">
+      <div className="flex items-center justify-center gap-1 md:gap-3 flex-wrap mb-4 md:mb-6">
         {categories.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setActiveFilter(cat.id)}
-            className={`px-3 py-1.5 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-medium tracking-wide transition-all duration-300 ${
+            className={`px-2.5 py-1 md:px-5 md:py-2.5 rounded-full text-[10px] md:text-sm font-medium tracking-wide transition-all duration-300 ${
               activeFilter === cat.id
                 ? "bg-gradient-to-r from-[var(--color-gold-dark)] to-[var(--color-gold)] text-white shadow-lg shadow-[var(--color-gold)]/20"
                 : "bg-white text-[var(--color-text-mid)] hover:bg-[var(--color-cream)] border border-[var(--color-cream-dark)]"

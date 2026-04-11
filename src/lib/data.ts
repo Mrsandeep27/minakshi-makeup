@@ -453,10 +453,10 @@ export const marqueeItems = [
 
 export const portfolioCategories = [
   { id: "all", label: "All" },
-  { id: "bridal", label: "Bridal Makeup Looks" },
-  { id: "party", label: "Party Looks" },
-  { id: "engagement", label: "Engagement Looks" },
-  { id: "pre-wedding", label: "Pre-Wedding Looks" },
-  { id: "babyshower", label: "Baby Shower Looks" },
-  { id: "haldi", label: "Haldi Looks" },
+  { id: "bridal", label: "Bridal" },
+  { id: "party", label: "Party" },
+  { id: "engagement", label: "Engagement" },
+  { id: "pre-wedding", label: "Pre-Wedding" },
+  { id: "babyshower", label: "Baby Shower" },
+  { id: "haldi", label: "Haldi" },
 ];
