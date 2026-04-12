@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-dark)] text-white/80 pb-16 md:pb-0">
+    <footer className="bg-[var(--color-dark)] text-white/80 pb-16 md:pb-0 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-6 md:py-12">
         {/* Mobile: Compact layout */}
         <div className="md:hidden">
