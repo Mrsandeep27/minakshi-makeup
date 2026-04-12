@@ -3,8 +3,11 @@ import { services, siteConfig } from "@/lib/data";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "Services | Minakshi Makeup & Hair",
-  description: "Bridal, Engagement, Reception, South Indian, Bengali, Baby Shower makeup services. Hair Styling & Cinematic Wedding Packages. Book your trial session.",
+  title: "Services — Bridal, Party, Destination Makeup & Classes",
+  description: "Bridal HD/Natural makeup, Pre/Post wedding, Party looks, Baby Shower, Makeup Classes with certification, Destination bridal. Mumbai's top makeup artist — book now!",
+  alternates: {
+    canonical: "https://mgmakeupandhair.in/services",
+  },
 };
 
 export default function ServicesPage() {
