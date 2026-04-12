@@ -26,18 +26,18 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <header className="relative min-h-screen flex items-end justify-center pb-4 md:pb-20 overflow-hidden">
+    <header className="relative min-h-screen flex items-end md:items-center justify-center pb-4 md:pb-0 overflow-hidden">
       {/* Background with Ken Burns */}
       <div className="absolute inset-0 hero-ken-burns">
         <img
           src="/images/hero-bg.webp"
           alt="Bridal beauty"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-top md:object-center"
         />
       </div>
 
-      {/* Dark Overlay — lighter on top to show face, darker at bottom for text */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/75" />
+      {/* Dark Overlay — lighter on top for mobile face, balanced for desktop */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/75 md:from-black/40 md:via-black/50 md:to-black/60" />
 
       {/* Particles */}
       <div ref={particlesRef} className="absolute inset-0 pointer-events-none" />
