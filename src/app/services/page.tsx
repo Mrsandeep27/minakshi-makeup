@@ -26,10 +26,10 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-3 md:py-10 bg-[var(--color-off-white)]">
         <div className="max-w-7xl mx-auto px-3 md:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8">
             {services.map((service, i) => (
               <ScrollReveal key={service.id} delay={i * 80}>
-                <div className="group bg-white rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
+                <div className="group bg-white rounded-xl md:rounded-2xl overflow-hidden border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative w-full h-44 md:h-56 overflow-hidden">
                     <img loading="lazy" decoding="async"
@@ -45,7 +45,7 @@ export default function ServicesPage() {
                     )}
                   </div>
                   {/* Content */}
-                  <div className="p-2.5 md:p-6">
+                  <div className="p-2.5 md:p-6 flex-1 flex flex-col">
                     <h2 className="font-[var(--font-heading)] text-sm md:text-xl font-semibold text-[var(--color-text)]">
                       {service.title}
                     </h2>
@@ -61,7 +61,7 @@ export default function ServicesPage() {
                     </div>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-1 md:gap-2 mt-2 md:mt-5 text-xs md:text-sm font-medium text-[var(--color-gold-dark)] hover:text-[var(--color-gold)] transition-colors"
+                      className="inline-flex items-center gap-1 md:gap-2 mt-auto pt-2 md:pt-5 text-xs md:text-sm font-medium text-[var(--color-gold-dark)] hover:text-[var(--color-gold)] transition-colors"
                     >
                       Book Now
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
