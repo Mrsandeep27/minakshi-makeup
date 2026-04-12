@@ -15,7 +15,7 @@ export default function Preloader() {
   return (
     <div className={`preloader ${hidden ? "hidden" : ""}`}>
       <div className="flex flex-col items-center">
-        <div className="preloader-logo">M</div>
+        <img src="/images/logo.webp" alt="Minakshi Makeup & Hair" className="w-24 h-24 rounded-full object-cover" style={{animation: 'preloaderPulse 1.5s ease-in-out infinite'}} />
         <div className="preloader-bar">
           <div className="preloader-fill" />
         </div>
