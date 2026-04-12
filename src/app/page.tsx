@@ -117,7 +117,7 @@ export default function HomePage() {
             {/* Self Makeup Pro */}
             <ScrollReveal delay={0}>
               <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 border border-[var(--color-cream-dark)] hover:border-[var(--color-gold-glow)] hover:shadow-xl transition-all duration-300">
-                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Self Makeup Pro</h3>
+                <h3 className="font-[var(--font-heading)] text-base md:text-lg font-bold text-[var(--color-text)]">Self Makeup</h3>
                 <p className="text-[var(--color-text-mid)] text-[11px] md:text-sm mt-1.5 leading-relaxed">Learn your face, master everyday & party looks. Perfect for beginners who want to do their own makeup like a pro.</p>
                 <div className="flex flex-wrap gap-1.5 mt-3">
                   <span className="px-2 py-0.5 bg-[var(--color-gold-soft)] rounded-full text-[9px] font-medium text-[var(--color-gold-dark)]">Self Glam</span>
