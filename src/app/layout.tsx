@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     template: "%s | Minakshi Makeup & Hair",
   },
   description:
-    "Mumbai's #1 Bridal Makeup Artist — 500+ happy brides, 4.9★ Google rating (171+ reviews). HD & Natural bridal makeup, party looks, destination weddings. Book now!",
+    "Best bridal makeup artist Mumbai. 500+ happy brides, 4.9★ Google rating. HD & Natural bridal makeup in Mumbai, Vasai Virar, and destination weddings. Book today!",
   keywords: [
     // Mumbai keywords
     "bridal makeup artist Mumbai",

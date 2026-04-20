@@ -323,7 +323,7 @@ export default function HomePage() {
                 Every Bride Becomes a <span className="text-gold-gradient italic">Masterpiece</span>
               </h2>
               <p className="text-[var(--color-text-mid)] text-xs mt-2 leading-relaxed line-clamp-4">
-                8+ years of experience, 500+ happy brides. Based in Mumbai, available globally — expert in every culture&apos;s bridal artistry.
+                Minakshi is a professional bridal makeup artist in Mumbai with 8+ years of experience and 500+ happy brides. The best bridal makeup artist Mumbai brides trust for their special day.
               </p>
               <div className="flex flex-wrap gap-1.5 mt-3">
                 {["Multi-Cultural", "HD Makeup", "No-Lash Natural"].map((tag) => (
