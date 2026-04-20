@@ -184,7 +184,7 @@ export default function HomePage() {
               Real Brides, <span className="text-gold-gradient italic">Real Glow</span>
             </h2>
             <p className="text-[var(--color-text-mid)] mt-4 max-w-xl mx-auto">
-              A glimpse of some of our beautiful brides on their most special day. No filter, no editing — just real beauty.
+              Real brides styled by Minakshi, the best bridal makeup artist Mumbai has to offer. No filter, no editing — just real bridal makeup Mumbai brides love.
             </p>
           </ScrollReveal>
 
@@ -665,7 +665,7 @@ export default function HomePage() {
               Ready to Look Your Most <span className="text-gold-gradient italic">Beautiful</span>?
             </h2>
             <p className="text-white/50 mt-3 md:mt-6 text-sm md:text-lg">
-              Let&apos;s discuss your vision and create a look that&apos;s uniquely yours.
+              Book the best bridal makeup artist Mumbai. Let&apos;s discuss your vision and create a look that&apos;s uniquely yours.
               Limited dates available — aaj hi book karo!
             </p>
             <div className="flex flex-row items-center justify-center gap-3 mt-6 md:mt-10">
