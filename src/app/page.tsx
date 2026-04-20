@@ -212,7 +212,7 @@ export default function HomePage() {
           <div className="hidden md:grid grid-cols-4 gap-4">
             <ScrollReveal delay={0} className="col-span-1 row-span-2">
               <div className="group relative h-full min-h-[520px] rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/glamorous-engagement.webp" alt="Glamorous Engagement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/glamorous-engagement.webp" alt="Glamorous Engagement Makeup by Minakshi - Bridal Makeup Artist Mumbai" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <span className="px-3 py-1 bg-[var(--color-gold)]/80 text-white text-[10px] font-bold tracking-wider uppercase rounded-full">Engagement</span>
@@ -222,7 +222,7 @@ export default function HomePage() {
             </ScrollReveal>
             <ScrollReveal delay={80}>
               <div className="group relative h-[250px] rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/marathi-bride.webp" alt="Marathi Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/marathi-bride.webp" alt="Marathi Bridal Makeup Mumbai - Traditional Bride Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Marathi Dulhan</span>
@@ -231,7 +231,7 @@ export default function HomePage() {
             </ScrollReveal>
             <ScrollReveal delay={120}>
               <div className="group relative h-[250px] rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/soft-pink-bride.webp" alt="Soft Pink Bride" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/soft-pink-bride.webp" alt="Soft Pink Bridal Makeup Mumbai - Natural Bridal Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Soft Pink Bride</span>
@@ -240,7 +240,7 @@ export default function HomePage() {
             </ScrollReveal>
             <ScrollReveal delay={160} className="col-span-1 row-span-2">
               <div className="group relative h-full min-h-[520px] rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/glowing-wedding.webp" alt="Glowing Wedding" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/glowing-wedding.webp" alt="Glowing Wedding Makeup Mumbai - Bridal Makeup Artist" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <span className="px-3 py-1 bg-[var(--color-gold)]/80 text-white text-[10px] font-bold tracking-wider uppercase rounded-full">Bridal</span>
@@ -250,7 +250,7 @@ export default function HomePage() {
             </ScrollReveal>
             <ScrollReveal delay={200}>
               <div className="group relative h-[250px] rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/reception-makeover.webp" alt="Reception" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/reception-makeover.webp" alt="Reception Makeup Mumbai - Bridal Makeup Artist" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">Reception Makeover</span>
@@ -259,7 +259,7 @@ export default function HomePage() {
             </ScrollReveal>
             <ScrollReveal delay={240}>
               <div className="group relative h-[250px] rounded-2xl overflow-hidden">
-                <img loading="lazy" decoding="async" src="/images/portfolio/hd-siders-look.webp" alt="HD Look" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
+                <img loading="lazy" decoding="async" src="/images/portfolio/hd-siders-look.webp" alt="HD Bridal Makeup Mumbai by Minakshi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: 'center 30%'}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-sm font-semibold">HD Siders Look</span>
@@ -312,7 +312,7 @@ export default function HomePage() {
             <div className="flex-shrink-0 w-[120px]">
               <div className="relative rounded-xl overflow-hidden gold-frame-glow">
                 <img loading="lazy" decoding="async"                   src="/images/about-main.webp"
-                  alt="Minakshi at work"
+                  alt="Minakshi - Best Bridal Makeup Artist Mumbai at work"
                   className="w-full h-[160px] object-cover" style={{objectPosition: 'center 30%'}}
                 />
               </div>
@@ -348,7 +348,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden gold-frame-glow">
                   <img loading="lazy" decoding="async"                     src="/images/about-main.webp"
-                    alt="Minakshi at work"
+                    alt="Minakshi - Best Bridal Makeup Artist Mumbai at work"
                     className="w-full h-[520px] object-cover" style={{objectPosition: 'center 30%'}}
                   />
                 </div>
@@ -360,7 +360,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <img loading="lazy" decoding="async"                   src="/images/about-detail.webp"
-                  alt="Makeup detail"
+                  alt="Bridal Makeup Detail by Mumbai Makeup Artist Minakshi"
                   className="absolute -top-6 -left-6 w-36 h-44 object-cover rounded-2xl shadow-xl border-4 border-white hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute -z-10 -bottom-8 -left-8 w-32 h-32 dot-grid opacity-30" />
@@ -373,12 +373,12 @@ export default function HomePage() {
                 Every Bride Becomes a <span className="text-gold-gradient italic">Masterpiece</span>
               </h2>
               <p className="text-[var(--color-text-mid)] mt-6 leading-relaxed">
-                With over 8 years of experience, I&apos;ve had the honour of making 500+ brides feel their most beautiful.
-                Based in Mumbai and available globally — I specialize in multi-cultural bridal artistry
-                across Marathi, South Indian, Bengali, and Buddhist styles.
+                I&apos;m Minakshi — the best bridal makeup artist in Mumbai with over 8 years of experience and 500+ happy brides.
+                As a trusted bridal makeup artist in Mumbai, I specialize in multi-cultural bridal artistry
+                across Marathi, South Indian, Bengali, and modern styles. Also serving Vasai Virar and destination weddings globally.
               </p>
               <p className="text-[var(--color-text-mid)] mt-4 leading-relaxed">
-                My philosophy is simple: &ldquo;No filter ahead.&rdquo; I enhance your natural beauty rather than masking it.
+                My philosophy is simple: &ldquo;No filter ahead.&rdquo; As your bridal makeup artist in Mumbai, I enhance your natural beauty rather than masking it.
                 Every brush stroke is a celebration of who you are — making your special day truly unforgettable.
               </p>
 
