@@ -98,11 +98,20 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://mgmakeupandhair.in",
     siteName: "Minakshi Makeup & Hair",
+    images: [
+      {
+        url: "https://mgmakeupandhair.in/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Minakshi - Best Bridal Makeup Artist in Mumbai",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Minakshi Makeup & Hair | Best Bridal Makeup Artist Mumbai",
     description: "500+ happy brides. 4.9★ rated. Book your special day!",
+    images: ["https://mgmakeupandhair.in/og-image.jpg"],
   },
   alternates: {
     canonical: "https://mgmakeupandhair.in",
