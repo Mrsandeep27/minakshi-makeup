@@ -7,10 +7,44 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const name = (formData.get("name") as string) || "";
+    const phone = (formData.get("phone") as string) || "";
+    const eventType = (formData.get("eventType") as string) || "";
+    const date = (formData.get("date") as string) || "";
+    const message = (formData.get("message") as string) || "";
+
+    const eventLabels: Record<string, string> = {
+      "bridal": "Bridal Makeup & Hair",
+      "pre-post-wedding": "Pre / Post Wedding Functions",
+      "party": "Party Makeup & Hair",
+      "baby-shower-birthday": "Baby Shower / Birthday",
+      "classes": "Makeup Classes / Workshops",
+      "destination": "Destination Bridal Makeup",
+      "other": "Other",
+    };
+
+    const text =
+      `Hi Minakshi! I'd like to book your makeup services.\n\n` +
+      `*Name:* ${name}\n` +
+      `*Phone:* ${phone}\n` +
+      `*Event:* ${eventLabels[eventType] || eventType}\n` +
+      (date ? `*Date:* ${date}\n` : "") +
+      (message ? `*Message:* ${message}\n` : "") +
+      `\nPlease share the details!`;
+
+    const whatsappUrl = `https://wa.me/919172235347?text=${encodeURIComponent(text)}`;
+
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+      setSubmitted(false);
+      form.reset();
+    }, 800);
   };
 
   return (
@@ -72,12 +106,14 @@ export default function ContactPage() {
                 <div className="grid grid-cols-2 gap-2">
                   <input
                     type="text"
+                    name="name"
                     required
                     placeholder="Name *"
                     className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                   />
                   <input
                     type="tel"
+                    name="phone"
                     required
                     placeholder="Phone *"
                     className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
@@ -85,6 +121,7 @@ export default function ContactPage() {
                 </div>
 
                 <select
+                  name="eventType"
                   required
                   className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                 >
@@ -101,11 +138,13 @@ export default function ContactPage() {
 
                 <input
                   type="date"
+                  name="date"
                   className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                 />
 
                 <textarea
                   rows={3}
+                  name="message"
                   placeholder="Tell me about your vision..."
                   className="w-full px-3 py-2.5 rounded-lg border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-xs focus:outline-none focus:border-[var(--color-gold)] transition-colors resize-none"
                 />
@@ -119,7 +158,7 @@ export default function ContactPage() {
                       : "btn-shimmer bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white"
                   }`}
                 >
-                  {submitted ? "Inquiry Sent! We'll get back soon." : "Send Inquiry"}
+                  {submitted ? "Opening WhatsApp..." : "Send Inquiry via WhatsApp"}
                 </button>
               </form>
             </div>
@@ -192,38 +231,38 @@ export default function ContactPage() {
             <ScrollReveal variant="right">
               <div className="bg-white rounded-2xl p-8 border border-[var(--color-cream-dark)]">
                 <h3 className="font-[var(--font-heading)] text-xl font-semibold text-[var(--color-text)] mb-2">Send Inquiry</h3>
-                <p className="text-sm text-[var(--color-text-mid)] mb-8">Fill out the form and I&apos;ll reply within 24 hours.</p>
+                <p className="text-sm text-[var(--color-text-mid)] mb-8">Fill the form — it opens WhatsApp so I get your inquiry instantly!</p>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Your Name *</label>
-                    <input type="text" required placeholder="Enter your full name" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
+                    <input type="text" name="name" required placeholder="Enter your full name" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Phone / WhatsApp *</label>
-                    <input type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
+                    <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Type *</label>
-                    <select required className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors">
+                    <select name="eventType" required className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors">
                       <option value="">Select event type</option>
                       <option value="bridal">Bridal Makeup & Hair</option>
                       <option value="pre-post-wedding">Pre / Post Wedding Functions</option>
                       <option value="party">Party Makeup & Hair</option>
                       <option value="baby-shower-birthday">Baby Shower / Birthday</option>
                       <option value="classes">Makeup Classes / Workshops</option>
-    
+
                       <option value="destination">Destination Bridal Makeup</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Event Date</label>
-                    <input type="date" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
+                    <input type="date" name="date" className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[var(--color-text)] mb-1.5">Message</label>
-                    <textarea rows={4} placeholder="Tell me about your vision, any preferences, outfit details..." className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors resize-none" />
+                    <textarea rows={4} name="message" placeholder="Tell me about your vision, any preferences, outfit details..." className="w-full px-4 py-3 rounded-xl border border-[var(--color-cream-dark)] bg-[var(--color-off-white)] text-sm focus:outline-none focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold-glow)] transition-colors resize-none" />
                   </div>
                   <button
                     type="submit"
@@ -232,7 +271,7 @@ export default function ContactPage() {
                       submitted ? "bg-green-500 text-white" : "bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-light)] text-white hover:shadow-[0_8px_32px_rgba(200,165,90,0.3)]"
                     }`}
                   >
-                    {submitted ? "Inquiry Bhej Di! Jaldi reply karenge." : "Send Inquiry"}
+                    {submitted ? "Opening WhatsApp..." : "Send Inquiry via WhatsApp"}
                   </button>
                 </form>
               </div>
